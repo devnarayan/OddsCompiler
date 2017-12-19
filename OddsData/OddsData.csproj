@@ -42,6 +42,7 @@
     <Compile Include="CrawlAllMarketsData.cs" />
     <Compile Include="CrawlEachMarketData.cs" />
     <Compile Include="CrawlFirstPageData.cs" />
+    <Compile Include="FDOTService.cs" />
     <Compile Include="GenerateCouponData.cs" />
     <Compile Include="OddsConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

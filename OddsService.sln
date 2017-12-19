@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsBusiness", "OddsBusiness\OddsBusiness.csproj", "{47480577-3D84-4584-8298-FDF5CE35AE08}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsCheckerService", "OddsCheckerService\OddsCheckerService.csproj", "{F179CD8F-E24D-4A4F-973D-7024582069A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackCrawler", "BackCrawler\BackCrawler.csproj", "{87B3DE75-8F5C-40A9-9691-AB49B0A3C2B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDOTCrawlerApp", "FDOTCrawlerApp\FDOTCrawlerApp.csproj", "{8642B647-78D5-4B36-8528-99A69BF28CE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,8 +47,15 @@ Global
 		{87B3DE75-8F5C-40A9-9691-AB49B0A3C2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87B3DE75-8F5C-40A9-9691-AB49B0A3C2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87B3DE75-8F5C-40A9-9691-AB49B0A3C2B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8642B647-78D5-4B36-8528-99A69BF28CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8642B647-78D5-4B36-8528-99A69BF28CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8642B647-78D5-4B36-8528-99A69BF28CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8642B647-78D5-4B36-8528-99A69BF28CE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0341A06D-12AD-444B-A2D2-E50FD3AF398F}
 	EndGlobalSection
 EndGlobal

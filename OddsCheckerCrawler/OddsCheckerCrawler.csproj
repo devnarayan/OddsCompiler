@@ -33,10 +33,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CodersLab.Windows.Controls.TreeView">
-      <HintPath>..\..\..\..\Downloads\New folder\New folder\multi-select-TreeView\bin\CodersLab.Windows.Controls.TreeView.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\dotNetMultiSelectTreeView-master\dotNetMultiSelectTreeView-master\bin\CodersLab.Windows.Controls.TreeView.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPack">
-      <HintPath>E:\OddsCompiler\HtmlAgilityPack.1.4.6\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.6.8.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.6.8\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -178,6 +181,7 @@
     <EmbeddedResource Include="UpdatePrice.resx">
       <DependentUpon>UpdatePrice.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

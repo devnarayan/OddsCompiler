@@ -1,0 +1,4 @@
+C:\Users\Dev\Source\Repos\OddsCompiler\OddsCheckerCrawler\Fakes\CodersLab.Windows.Controls.TreeView.fakes : warning : Cannot generate stub for CodersLab.Windows.Controls.TreeViewSelectionMode: type is a value type.
+C:\Users\Dev\Source\Repos\OddsCompiler\OddsCheckerCrawler\Fakes\CodersLab.Windows.Controls.TreeView.fakes : warning : Cannot generate stub for CodersLab.Windows.Controls.TreeNodeEventHandler: type is sealed.
+C:\Users\Dev\Source\Repos\OddsCompiler\OddsCheckerCrawler\Fakes\CodersLab.Windows.Controls.TreeView.fakes : warning : Cannot generate shim for CodersLab.Windows.Controls.TreeViewSelectionMode: type is an enum.
+C:\Users\Dev\Source\Repos\OddsCompiler\OddsCheckerCrawler\Fakes\CodersLab.Windows.Controls.TreeView.fakes : warning : Cannot generate shim for CodersLab.Windows.Controls.TreeNodeEventHandler: type is a delegate.

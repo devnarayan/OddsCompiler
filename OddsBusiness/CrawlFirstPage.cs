@@ -69,8 +69,10 @@ namespace OddsBusiness
                     int sportid = Convert.ToInt32(dt.Rows[i]["sportid"].ToString());
                     if (sportid.Equals(2))
                     {
-                        ThreadParameters tp = new ThreadParameters();
-                        tp.URL = link;
+                        ThreadParameters tp = new ThreadParameters
+                        {
+                            URL = link
+                        };
                         ThreadPool.QueueUserWorkItem(new WaitCallback(CrawlLeagues), tp);
                       // CrawlLeagues(link);
                        CrawlWorldMarkets();

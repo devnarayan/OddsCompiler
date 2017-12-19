@@ -1,0 +1,1748 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodersLab.Windows.Controls.TreeView.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CodersLab.Windows.Controls.Fakes.ShimNodesCollection">
+            <summary>Shim type of CodersLab.Windows.Controls.NodesCollection</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.#ctor(CodersLab.Windows.Controls.NodesCollection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AddTreeNode">
+            <summary>Sets the shim of NodesCollection.Add(TreeNode treeNode)</summary>
+        </member>
+        <member name="T:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.AddTreeNode">
+            <summary>Sets the shim of NodesCollection.Add(TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.ContainsTreeNode">
+            <summary>Sets the shim of NodesCollection.Contains(TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.IndexOfTreeNode">
+            <summary>Sets the shim of NodesCollection.IndexOf(TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.InsertInt32TreeNode">
+            <summary>Sets the shim of NodesCollection.Insert(Int32 index, TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of NodesCollection.get_Item(Int32 index)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.OnClear">
+            <summary>Sets the shim of NodesCollection.OnClear()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.RemoveTreeNode">
+            <summary>Sets the shim of NodesCollection.Remove(TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.SelectedNodesClearedAddEventHandler">
+            <summary>Sets the shim of NodesCollection.add_SelectedNodesCleared(EventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.SelectedNodesClearedRemoveEventHandler">
+            <summary>Sets the shim of NodesCollection.remove_SelectedNodesCleared(EventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.TreeNodeAddedAddTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.add_TreeNodeAdded(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.TreeNodeAddedRemoveTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.remove_TreeNodeAdded(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.TreeNodeInsertedAddTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.add_TreeNodeInserted(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.TreeNodeInsertedRemoveTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.remove_TreeNodeInserted(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.TreeNodeRemovedAddTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.add_TreeNodeRemoved(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.AllInstances.TreeNodeRemovedRemoveTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.remove_TreeNodeRemoved(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.Bind(System.Collections.IList)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.Constructor">
+            <summary>Sets the shim of NodesCollection.NodesCollection()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.ContainsTreeNode">
+            <summary>Sets the shim of NodesCollection.Contains(TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.IndexOfTreeNode">
+            <summary>Sets the shim of NodesCollection.IndexOf(TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.InsertInt32TreeNode">
+            <summary>Sets the shim of NodesCollection.Insert(Int32 index, TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.ItemGetInt32">
+            <summary>Sets the shim of NodesCollection.get_Item(Int32 index)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.OnClear">
+            <summary>Sets the shim of NodesCollection.OnClear()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.RemoveTreeNode">
+            <summary>Sets the shim of NodesCollection.Remove(TreeNode treeNode)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.SelectedNodesClearedAddEventHandler">
+            <summary>Sets the shim of NodesCollection.add_SelectedNodesCleared(EventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.SelectedNodesClearedRemoveEventHandler">
+            <summary>Sets the shim of NodesCollection.remove_SelectedNodesCleared(EventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.TreeNodeAddedAddTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.add_TreeNodeAdded(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.TreeNodeAddedRemoveTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.remove_TreeNodeAdded(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.TreeNodeInsertedAddTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.add_TreeNodeInserted(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.TreeNodeInsertedRemoveTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.remove_TreeNodeInserted(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.TreeNodeRemovedAddTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.add_TreeNodeRemoved(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimNodesCollection.TreeNodeRemovedRemoveTreeNodeEventHandler">
+            <summary>Sets the shim of NodesCollection.remove_TreeNodeRemoved(TreeNodeEventHandler value)</summary>
+        </member>
+        <member name="T:CodersLab.Windows.Controls.Fakes.ShimTreeView">
+            <summary>Shim type of CodersLab.Windows.Controls.TreeView</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.#ctor(CodersLab.Windows.Controls.TreeView)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AfterDeselectAddTreeViewEventHandler">
+            <summary>Sets the shim of TreeView.add_AfterDeselect(TreeViewEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AfterDeselectRemoveTreeViewEventHandler">
+            <summary>Sets the shim of TreeView.remove_AfterDeselect(TreeViewEventHandler value)</summary>
+        </member>
+        <member name="T:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.AfterDeselectAddTreeViewEventHandler">
+            <summary>Sets the shim of TreeView.add_AfterDeselect(TreeViewEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.AfterDeselectRemoveTreeViewEventHandler">
+            <summary>Sets the shim of TreeView.remove_AfterDeselect(TreeViewEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.BeforeDeselectAddTreeViewEventHandler">
+            <summary>Sets the shim of TreeView.add_BeforeDeselect(TreeViewEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.BeforeDeselectRemoveTreeViewEventHandler">
+            <summary>Sets the shim of TreeView.remove_BeforeDeselect(TreeViewEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of TreeView.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.FlashNode">
+            <summary>Sets the shim of TreeView.FlashNode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.GetLastVisibleNode">
+            <summary>Sets the shim of TreeView.GetLastVisibleNode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.GetNextTreeNodeTreeNodeBooleanInt32">
+            <summary>Sets the shim of TreeView.GetNextTreeNode(TreeNode start, Boolean down, Int32 intNumber)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.GetNodeLevelTreeNode">
+            <summary>Sets the shim of TreeView.GetNodeLevel(TreeNode node)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.GetNumberOfVisibleNodes">
+            <summary>Sets the shim of TreeView.GetNumberOfVisibleNodes()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.GetRootParentTreeNode">
+            <summary>Sets the shim of TreeView.GetRootParent(TreeNode child)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.InitializeComponent">
+            <summary>Sets the shim of TreeView.InitializeComponent()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.IsChildOfTreeNodeTreeNode">
+            <summary>Sets the shim of TreeView.IsChildOf(TreeNode child, TreeNode parent)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.IsClickOnNodeTreeNodeMouseEventArgs">
+            <summary>Sets the shim of TreeView.IsClickOnNode(TreeNode tn, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.IsNodeSelectedTreeNode">
+            <summary>Sets the shim of TreeView.IsNodeSelected(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.IsPlusMinusClickedTreeNodeMouseEventArgs">
+            <summary>Sets the shim of TreeView.IsPlusMinusClicked(TreeNode tn, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnAfterCollapseTreeViewEventArgs">
+            <summary>Sets the shim of TreeView.OnAfterCollapse(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnAfterDeselectTreeNode">
+            <summary>Sets the shim of TreeView.OnAfterDeselect(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnBeforeDeselectTreeNode">
+            <summary>Sets the shim of TreeView.OnBeforeDeselect(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnBeforeLabelEditNodeLabelEditEventArgs">
+            <summary>Sets the shim of TreeView.OnBeforeLabelEdit(NodeLabelEditEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnBeforeSelectTreeViewCancelEventArgs">
+            <summary>Sets the shim of TreeView.OnBeforeSelect(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnItemDragItemDragEventArgs">
+            <summary>Sets the shim of TreeView.OnItemDrag(ItemDragEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnKeyDownKeyEventArgs">
+            <summary>Sets the shim of TreeView.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnMouseDownMouseEventArgs">
+            <summary>Sets the shim of TreeView.OnMouseDown(MouseEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnMouseUpMouseEventArgs">
+            <summary>Sets the shim of TreeView.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.OnSelectionsChanged">
+            <summary>Sets the shim of TreeView.OnSelectionsChanged()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.PreserveNodeColorsTreeNode">
+            <summary>Sets the shim of TreeView.PreserveNodeColors(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.ProcessNodeRangeTreeNodeTreeNodeMouseEventArgsKeysTreeViewActionBoolean">
+            <summary>Sets the shim of TreeView.ProcessNodeRange(TreeNode startNode, TreeNode endNode, MouseEventArgs e, Keys keys, TreeViewAction tva, Boolean allowStartEdit)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectNodeTreeNodeBooleanTreeViewAction">
+            <summary>Sets the shim of TreeView.SelectNode(TreeNode tn, Boolean select, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectNodesInsideRangeTreeNodeTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.SelectNodesInsideRange(TreeNode startNode, TreeNode endNode, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectedNodeGet">
+            <summary>Sets the shim of TreeView.get_SelectedNode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectedNodeSetTreeNode">
+            <summary>Sets the shim of TreeView.set_SelectedNode(TreeNode value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectedNodesGet">
+            <summary>Sets the shim of TreeView.get_SelectedNodes()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectedNodes_SelectedNodesClearedObjectEventArgs">
+            <summary>Sets the shim of TreeView.SelectedNodes_SelectedNodesCleared(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectedNodes_TreeNodeAddedTreeNode">
+            <summary>Sets the shim of TreeView.SelectedNodes_TreeNodeAdded(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectedNodes_TreeNodeInsertedTreeNode">
+            <summary>Sets the shim of TreeView.SelectedNodes_TreeNodeInserted(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectedNodes_TreeNodeRemovedTreeNode">
+            <summary>Sets the shim of TreeView.SelectedNodes_TreeNodeRemoved(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectionBackColorGet">
+            <summary>Sets the shim of TreeView.get_SelectionBackColor()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectionBackColorSetColor">
+            <summary>Sets the shim of TreeView.set_SelectionBackColor(Color value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectionModeGet">
+            <summary>Sets the shim of TreeView.get_SelectionMode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectionModeSetTreeViewSelectionMode">
+            <summary>Sets the shim of TreeView.set_SelectionMode(TreeViewSelectionMode value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectionsChangedAddEventHandler">
+            <summary>Sets the shim of TreeView.add_SelectionsChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SelectionsChangedRemoveEventHandler">
+            <summary>Sets the shim of TreeView.remove_SelectionsChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.SetFocusToNodeTreeNodeBoolean">
+            <summary>Sets the shim of TreeView.SetFocusToNode(TreeNode tn, Boolean visible)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.StartEdit">
+            <summary>Sets the shim of TreeView.StartEdit()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.UnselectAllNodesExceptNodeTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodesExceptNode(TreeNode nodeKeepSelected, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.UnselectAllNodesNotBelongingDirectlyToParentTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodesNotBelongingDirectlyToParent(TreeNode parent, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.UnselectAllNodesNotBelongingToLevelInt32TreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodesNotBelongingToLevel(Int32 level, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.UnselectAllNodesNotBelongingToParentTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodesNotBelongingToParent(TreeNode parent, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.UnselectAllNodesTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodes(TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.UnselectNodesOutsideRangeTreeNodeTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectNodesOutsideRange(TreeNode startNode, TreeNode endNode, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances.UnselectNodesRecursivelyTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectNodesRecursively(TreeNode tn, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.AllInstances._FlashNodeb__0">
+            <summary>Sets the shim of TreeView.&lt;FlashNode&gt;b__0()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.BeforeDeselectAddTreeViewEventHandler">
+            <summary>Sets the shim of TreeView.add_BeforeDeselect(TreeViewEventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.BeforeDeselectRemoveTreeViewEventHandler">
+            <summary>Sets the shim of TreeView.remove_BeforeDeselect(TreeViewEventHandler value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.Bind(System.ComponentModel.ISynchronizeInvoke)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.Bind(System.Windows.Forms.IBindableComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.Bind(System.Windows.Forms.IDropTarget)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.Bind(System.Windows.Forms.IWin32Window)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.ShimTreeView.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.Constructor">
+            <summary>Sets the shim of TreeView.TreeView()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.DisposeBoolean">
+            <summary>Sets the shim of TreeView.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.FlashNode">
+            <summary>Sets the shim of TreeView.FlashNode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.GetLastVisibleNode">
+            <summary>Sets the shim of TreeView.GetLastVisibleNode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.GetNextTreeNodeTreeNodeBooleanInt32">
+            <summary>Sets the shim of TreeView.GetNextTreeNode(TreeNode start, Boolean down, Int32 intNumber)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.GetNodeLevelTreeNode">
+            <summary>Sets the shim of TreeView.GetNodeLevel(TreeNode node)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.GetNumberOfVisibleNodes">
+            <summary>Sets the shim of TreeView.GetNumberOfVisibleNodes()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.GetRootParentTreeNode">
+            <summary>Sets the shim of TreeView.GetRootParent(TreeNode child)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.InitializeComponent">
+            <summary>Sets the shim of TreeView.InitializeComponent()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.IsChildOfTreeNodeTreeNode">
+            <summary>Sets the shim of TreeView.IsChildOf(TreeNode child, TreeNode parent)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.IsClickOnNodeTreeNodeMouseEventArgs">
+            <summary>Sets the shim of TreeView.IsClickOnNode(TreeNode tn, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.IsNodeSelectedTreeNode">
+            <summary>Sets the shim of TreeView.IsNodeSelected(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.IsPlusMinusClickedTreeNodeMouseEventArgs">
+            <summary>Sets the shim of TreeView.IsPlusMinusClicked(TreeNode tn, MouseEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnAfterCollapseTreeViewEventArgs">
+            <summary>Sets the shim of TreeView.OnAfterCollapse(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnAfterDeselectTreeNode">
+            <summary>Sets the shim of TreeView.OnAfterDeselect(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnBeforeDeselectTreeNode">
+            <summary>Sets the shim of TreeView.OnBeforeDeselect(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnBeforeLabelEditNodeLabelEditEventArgs">
+            <summary>Sets the shim of TreeView.OnBeforeLabelEdit(NodeLabelEditEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnBeforeSelectTreeViewCancelEventArgs">
+            <summary>Sets the shim of TreeView.OnBeforeSelect(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnItemDragItemDragEventArgs">
+            <summary>Sets the shim of TreeView.OnItemDrag(ItemDragEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnKeyDownKeyEventArgs">
+            <summary>Sets the shim of TreeView.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnMouseDownMouseEventArgs">
+            <summary>Sets the shim of TreeView.OnMouseDown(MouseEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnMouseUpMouseEventArgs">
+            <summary>Sets the shim of TreeView.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.OnSelectionsChanged">
+            <summary>Sets the shim of TreeView.OnSelectionsChanged()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.PreserveNodeColorsTreeNode">
+            <summary>Sets the shim of TreeView.PreserveNodeColors(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.ProcessNodeRangeTreeNodeTreeNodeMouseEventArgsKeysTreeViewActionBoolean">
+            <summary>Sets the shim of TreeView.ProcessNodeRange(TreeNode startNode, TreeNode endNode, MouseEventArgs e, Keys keys, TreeViewAction tva, Boolean allowStartEdit)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectNodeTreeNodeBooleanTreeViewAction">
+            <summary>Sets the shim of TreeView.SelectNode(TreeNode tn, Boolean select, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectNodesInsideRangeTreeNodeTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.SelectNodesInsideRange(TreeNode startNode, TreeNode endNode, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectedNodeGet">
+            <summary>Sets the shim of TreeView.get_SelectedNode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectedNodeSetTreeNode">
+            <summary>Sets the shim of TreeView.set_SelectedNode(TreeNode value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectedNodesGet">
+            <summary>Sets the shim of TreeView.get_SelectedNodes()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectedNodes_SelectedNodesClearedObjectEventArgs">
+            <summary>Sets the shim of TreeView.SelectedNodes_SelectedNodesCleared(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectedNodes_TreeNodeAddedTreeNode">
+            <summary>Sets the shim of TreeView.SelectedNodes_TreeNodeAdded(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectedNodes_TreeNodeInsertedTreeNode">
+            <summary>Sets the shim of TreeView.SelectedNodes_TreeNodeInserted(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectedNodes_TreeNodeRemovedTreeNode">
+            <summary>Sets the shim of TreeView.SelectedNodes_TreeNodeRemoved(TreeNode tn)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectionBackColorGet">
+            <summary>Sets the shim of TreeView.get_SelectionBackColor()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectionBackColorSetColor">
+            <summary>Sets the shim of TreeView.set_SelectionBackColor(Color value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectionModeGet">
+            <summary>Sets the shim of TreeView.get_SelectionMode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectionModeSetTreeViewSelectionMode">
+            <summary>Sets the shim of TreeView.set_SelectionMode(TreeViewSelectionMode value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectionsChangedAddEventHandler">
+            <summary>Sets the shim of TreeView.add_SelectionsChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SelectionsChangedRemoveEventHandler">
+            <summary>Sets the shim of TreeView.remove_SelectionsChanged(EventHandler value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.SetFocusToNodeTreeNodeBoolean">
+            <summary>Sets the shim of TreeView.SetFocusToNode(TreeNode tn, Boolean visible)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.StartEdit">
+            <summary>Sets the shim of TreeView.StartEdit()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.UnselectAllNodesExceptNodeTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodesExceptNode(TreeNode nodeKeepSelected, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.UnselectAllNodesNotBelongingDirectlyToParentTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodesNotBelongingDirectlyToParent(TreeNode parent, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.UnselectAllNodesNotBelongingToLevelInt32TreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodesNotBelongingToLevel(Int32 level, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.UnselectAllNodesNotBelongingToParentTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodesNotBelongingToParent(TreeNode parent, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.UnselectAllNodesTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectAllNodes(TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.UnselectNodesOutsideRangeTreeNodeTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectNodesOutsideRange(TreeNode startNode, TreeNode endNode, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView.UnselectNodesRecursivelyTreeNodeTreeViewAction">
+            <summary>Sets the shim of TreeView.UnselectNodesRecursively(TreeNode tn, TreeViewAction tva)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.ShimTreeView._FlashNodeb__0">
+            <summary>Sets the shim of TreeView.&lt;FlashNode&gt;b__0()</summary>
+        </member>
+        <member name="T:CodersLab.Windows.Controls.Fakes.StubNodesCollection">
+            <summary>Stub type of CodersLab.Windows.Controls.NodesCollection</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubNodesCollection.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.InitializeStub">
+            <summary>Initializes a new instance of type StubNodesCollection</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubNodesCollection.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubNodesCollection.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnClear">
+            <summary>Sets the stub of NodesCollection.OnClear()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnClear01">
+            <summary>Sets the stub of NodesCollection.OnClear()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnClearComplete">
+            <summary>Sets the stub of CollectionBase.OnClearComplete()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnClearComplete01">
+            <summary>Sets the stub of CollectionBase.OnClearComplete()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnInsert(System.Int32,System.Object)">
+            <summary>Sets the stub of CollectionBase.OnInsert(Int32 index, Object value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnInsertComplete(System.Int32,System.Object)">
+            <summary>Sets the stub of CollectionBase.OnInsertComplete(Int32 index, Object value)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnInsertCompleteInt32Object">
+            <summary>Sets the stub of CollectionBase.OnInsertComplete(Int32 index, Object value)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnInsertInt32Object">
+            <summary>Sets the stub of CollectionBase.OnInsert(Int32 index, Object value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnRemove(System.Int32,System.Object)">
+            <summary>Sets the stub of CollectionBase.OnRemove(Int32 index, Object value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnRemoveComplete(System.Int32,System.Object)">
+            <summary>Sets the stub of CollectionBase.OnRemoveComplete(Int32 index, Object value)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnRemoveCompleteInt32Object">
+            <summary>Sets the stub of CollectionBase.OnRemoveComplete(Int32 index, Object value)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnRemoveInt32Object">
+            <summary>Sets the stub of CollectionBase.OnRemove(Int32 index, Object value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnSet(System.Int32,System.Object,System.Object)">
+            <summary>Sets the stub of CollectionBase.OnSet(Int32 index, Object oldValue, Object newValue)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnSetComplete(System.Int32,System.Object,System.Object)">
+            <summary>Sets the stub of CollectionBase.OnSetComplete(Int32 index, Object oldValue, Object newValue)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnSetCompleteInt32ObjectObject">
+            <summary>Sets the stub of CollectionBase.OnSetComplete(Int32 index, Object oldValue, Object newValue)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnSetInt32ObjectObject">
+            <summary>Sets the stub of CollectionBase.OnSet(Int32 index, Object oldValue, Object newValue)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnValidate(System.Object)">
+            <summary>Sets the stub of CollectionBase.OnValidate(Object value)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubNodesCollection.OnValidateObject">
+            <summary>Sets the stub of CollectionBase.OnValidate(Object value)</summary>
+        </member>
+        <member name="T:CodersLab.Windows.Controls.Fakes.StubTreeView">
+            <summary>Stub type of CodersLab.Windows.Controls.TreeView</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.AllowDrop">
+            <summary>Sets the stub of Control.get_AllowDrop()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.AllowDropGet">
+            <summary>Sets the stub of Control.get_AllowDrop()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.AllowDropSetBoolean">
+            <summary>Sets the stub of Control.set_AllowDrop(Boolean value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.Anchor">
+            <summary>Sets the stub of Control.get_Anchor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.AnchorGet">
+            <summary>Sets the stub of Control.get_Anchor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.AnchorSetAnchorStyles">
+            <summary>Sets the stub of Control.set_Anchor(AnchorStyles value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToAllowDrop">
+            <summary>Attaches delegates to emulate StubTreeView.AllowDrop as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToAnchor">
+            <summary>Attaches delegates to emulate StubTreeView.Anchor as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToAutoScrollOffset">
+            <summary>Attaches delegates to emulate StubTreeView.AutoScrollOffset as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToAutoSize">
+            <summary>Attaches delegates to emulate StubTreeView.AutoSize as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToBackColor">
+            <summary>Attaches delegates to emulate StubTreeView.BackColor as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToBackgroundImage">
+            <summary>Attaches delegates to emulate StubTreeView.BackgroundImage as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToBackgroundImageLayout">
+            <summary>Attaches delegates to emulate StubTreeView.BackgroundImageLayout as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToBindingContext">
+            <summary>Attaches delegates to emulate StubTreeView.BindingContext as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToContextMenu">
+            <summary>Attaches delegates to emulate StubTreeView.ContextMenu as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToContextMenuStrip">
+            <summary>Attaches delegates to emulate StubTreeView.ContextMenuStrip as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToCursor">
+            <summary>Attaches delegates to emulate StubTreeView.Cursor as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToDock">
+            <summary>Attaches delegates to emulate StubTreeView.Dock as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToDoubleBuffered">
+            <summary>Attaches delegates to emulate StubTreeView.DoubleBuffered as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToFont">
+            <summary>Attaches delegates to emulate StubTreeView.Font as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToForeColor">
+            <summary>Attaches delegates to emulate StubTreeView.ForeColor as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToImeModeBase">
+            <summary>Attaches delegates to emulate StubTreeView.ImeModeBase as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToMaximumSize">
+            <summary>Attaches delegates to emulate StubTreeView.MaximumSize as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToMinimumSize">
+            <summary>Attaches delegates to emulate StubTreeView.MinimumSize as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToRightToLeft">
+            <summary>Attaches delegates to emulate StubTreeView.RightToLeft as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToRightToLeftLayout">
+            <summary>Attaches delegates to emulate StubTreeView.RightToLeftLayout as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToSite">
+            <summary>Attaches delegates to emulate StubTreeView.Site as a property with a backing field.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.AttachBackingFieldToText">
+            <summary>Attaches delegates to emulate StubTreeView.Text as a property with a backing field.</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.AutoScrollOffset">
+            <summary>Sets the stub of Control.get_AutoScrollOffset()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.AutoScrollOffsetGet">
+            <summary>Sets the stub of Control.get_AutoScrollOffset()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.AutoScrollOffsetSetPoint">
+            <summary>Sets the stub of Control.set_AutoScrollOffset(Point value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.AutoSize">
+            <summary>Sets the stub of Control.get_AutoSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.AutoSizeGet">
+            <summary>Sets the stub of Control.get_AutoSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.AutoSizeSetBoolean">
+            <summary>Sets the stub of Control.set_AutoSize(Boolean value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.BackColor">
+            <summary>Sets the stub of TreeView.get_BackColor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.BackColorGet">
+            <summary>Sets the stub of TreeView.get_BackColor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.BackColorSetColor">
+            <summary>Sets the stub of TreeView.set_BackColor(Color value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.BackgroundImage">
+            <summary>Sets the stub of TreeView.get_BackgroundImage()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.BackgroundImageGet">
+            <summary>Sets the stub of TreeView.get_BackgroundImage()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.BackgroundImageLayout">
+            <summary>Sets the stub of TreeView.get_BackgroundImageLayout()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.BackgroundImageLayoutGet">
+            <summary>Sets the stub of TreeView.get_BackgroundImageLayout()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.BackgroundImageLayoutSetImageLayout">
+            <summary>Sets the stub of TreeView.set_BackgroundImageLayout(ImageLayout value)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.BackgroundImageSetImage">
+            <summary>Sets the stub of TreeView.set_BackgroundImage(Image value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.BindingContext">
+            <summary>Sets the stub of Control.get_BindingContext()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.BindingContextGet">
+            <summary>Sets the stub of Control.get_BindingContext()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.BindingContextSetBindingContext">
+            <summary>Sets the stub of Control.set_BindingContext(BindingContext value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.CanEnableIme">
+            <summary>Sets the stub of Control.get_CanEnableIme()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.CanEnableImeGet">
+            <summary>Sets the stub of Control.get_CanEnableIme()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.CanRaiseEvents">
+            <summary>Sets the stub of Control.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.CanRaiseEventsGet">
+            <summary>Sets the stub of Control.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.ContextMenu">
+            <summary>Sets the stub of Control.get_ContextMenu()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ContextMenuGet">
+            <summary>Sets the stub of Control.get_ContextMenu()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ContextMenuSetContextMenu">
+            <summary>Sets the stub of Control.set_ContextMenu(ContextMenu value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.ContextMenuStrip">
+            <summary>Sets the stub of Control.get_ContextMenuStrip()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ContextMenuStripGet">
+            <summary>Sets the stub of Control.get_ContextMenuStrip()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ContextMenuStripSetContextMenuStrip">
+            <summary>Sets the stub of Control.set_ContextMenuStrip(ContextMenuStrip value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.CreateAccessibilityInstance">
+            <summary>Sets the stub of Control.CreateAccessibilityInstance()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.CreateAccessibilityInstance01">
+            <summary>Sets the stub of Control.CreateAccessibilityInstance()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.CreateControlsInstance">
+            <summary>Sets the stub of Control.CreateControlsInstance()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.CreateControlsInstance01">
+            <summary>Sets the stub of Control.CreateControlsInstance()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.CreateHandle">
+            <summary>Sets the stub of TreeView.CreateHandle()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.CreateHandle01">
+            <summary>Sets the stub of TreeView.CreateHandle()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.CreateParams">
+            <summary>Sets the stub of TreeView.get_CreateParams()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.CreateParamsGet">
+            <summary>Sets the stub of TreeView.get_CreateParams()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.Cursor">
+            <summary>Sets the stub of Control.get_Cursor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.CursorGet">
+            <summary>Sets the stub of Control.get_Cursor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.CursorSetCursor">
+            <summary>Sets the stub of Control.set_Cursor(Cursor value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.DefWndProc(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Control.DefWndProc(Message&amp; m)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DefWndProcMessageRef">
+            <summary>Sets the stub of Control.DefWndProc(Message&amp; m)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultCursor">
+            <summary>Sets the stub of Control.get_DefaultCursor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultCursorGet">
+            <summary>Sets the stub of Control.get_DefaultCursor()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultImeMode">
+            <summary>Sets the stub of Control.get_DefaultImeMode()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultImeModeGet">
+            <summary>Sets the stub of Control.get_DefaultImeMode()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultMargin">
+            <summary>Sets the stub of Control.get_DefaultMargin()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultMarginGet">
+            <summary>Sets the stub of Control.get_DefaultMargin()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultMaximumSize">
+            <summary>Sets the stub of Control.get_DefaultMaximumSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultMaximumSizeGet">
+            <summary>Sets the stub of Control.get_DefaultMaximumSize()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultMinimumSize">
+            <summary>Sets the stub of Control.get_DefaultMinimumSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultMinimumSizeGet">
+            <summary>Sets the stub of Control.get_DefaultMinimumSize()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultPadding">
+            <summary>Sets the stub of Control.get_DefaultPadding()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultPaddingGet">
+            <summary>Sets the stub of Control.get_DefaultPadding()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultSize">
+            <summary>Sets the stub of TreeView.get_DefaultSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DefaultSizeGet">
+            <summary>Sets the stub of TreeView.get_DefaultSize()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.DestroyHandle">
+            <summary>Sets the stub of Control.DestroyHandle()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DestroyHandle01">
+            <summary>Sets the stub of Control.DestroyHandle()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DisplayRectangle">
+            <summary>Sets the stub of Control.get_DisplayRectangle()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DisplayRectangleGet">
+            <summary>Sets the stub of Control.get_DisplayRectangle()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.Dispose(System.Boolean)">
+            <summary>Sets the stub of TreeView.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DisposeBoolean">
+            <summary>Sets the stub of TreeView.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.Dock">
+            <summary>Sets the stub of Control.get_Dock()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DockGet">
+            <summary>Sets the stub of Control.get_Dock()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DockSetDockStyle">
+            <summary>Sets the stub of Control.set_Dock(DockStyle value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.DoubleBuffered">
+            <summary>Sets the stub of TreeView.get_DoubleBuffered()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DoubleBufferedGet">
+            <summary>Sets the stub of TreeView.get_DoubleBuffered()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.DoubleBufferedSetBoolean">
+            <summary>Sets the stub of TreeView.set_DoubleBuffered(Boolean value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.Focused">
+            <summary>Sets the stub of Control.get_Focused()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.FocusedGet">
+            <summary>Sets the stub of Control.get_Focused()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.Font">
+            <summary>Sets the stub of Control.get_Font()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.FontGet">
+            <summary>Sets the stub of Control.get_Font()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.FontSetFont">
+            <summary>Sets the stub of Control.set_Font(Font value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.ForeColor">
+            <summary>Sets the stub of TreeView.get_ForeColor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ForeColorGet">
+            <summary>Sets the stub of TreeView.get_ForeColor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ForeColorSetColor">
+            <summary>Sets the stub of TreeView.set_ForeColor(Color value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.GetAccessibilityObjectById(System.Int32)">
+            <summary>Sets the stub of Control.GetAccessibilityObjectById(Int32 objectId)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.GetAccessibilityObjectByIdInt32">
+            <summary>Sets the stub of Control.GetAccessibilityObjectById(Int32 objectId)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.GetPreferredSize(System.Drawing.Size)">
+            <summary>Sets the stub of Control.GetPreferredSize(Size proposedSize)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.GetPreferredSizeSize">
+            <summary>Sets the stub of Control.GetPreferredSize(Size proposedSize)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)">
+            <summary>Sets the stub of Control.GetScaledBounds(Rectangle bounds, SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.GetScaledBoundsRectangleSizeFBoundsSpecified">
+            <summary>Sets the stub of Control.GetScaledBounds(Rectangle bounds, SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.GetService(System.Type)">
+            <summary>Sets the stub of Component.GetService(Type service)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.GetServiceType">
+            <summary>Sets the stub of Component.GetService(Type service)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.ImeModeBase">
+            <summary>Sets the stub of Control.get_ImeModeBase()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ImeModeBaseGet">
+            <summary>Sets the stub of Control.get_ImeModeBase()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ImeModeBaseSetImeMode">
+            <summary>Sets the stub of Control.set_ImeModeBase(ImeMode value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.InitLayout">
+            <summary>Sets the stub of Control.InitLayout()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.InitLayout01">
+            <summary>Sets the stub of Control.InitLayout()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.InitializeStub">
+            <summary>Initializes a new instance of type StubTreeView</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.IsInputChar(System.Char)">
+            <summary>Sets the stub of Control.IsInputChar(Char charCode)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.IsInputCharChar">
+            <summary>Sets the stub of Control.IsInputChar(Char charCode)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>Sets the stub of TreeView.IsInputKey(Keys keyData)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.IsInputKeyKeys">
+            <summary>Sets the stub of TreeView.IsInputKey(Keys keyData)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.LayoutEngine">
+            <summary>Sets the stub of Control.get_LayoutEngine()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.LayoutEngineGet">
+            <summary>Sets the stub of Control.get_LayoutEngine()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.MaximumSize">
+            <summary>Sets the stub of Control.get_MaximumSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.MaximumSizeGet">
+            <summary>Sets the stub of Control.get_MaximumSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.MaximumSizeSetSize">
+            <summary>Sets the stub of Control.set_MaximumSize(Size value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.MinimumSize">
+            <summary>Sets the stub of Control.get_MinimumSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.MinimumSizeGet">
+            <summary>Sets the stub of Control.get_MinimumSize()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.MinimumSizeSetSize">
+            <summary>Sets the stub of Control.set_MinimumSize(Size value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.NotifyInvalidate(System.Drawing.Rectangle)">
+            <summary>Sets the stub of Control.NotifyInvalidate(Rectangle invalidatedArea)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.NotifyInvalidateRectangle">
+            <summary>Sets the stub of Control.NotifyInvalidate(Rectangle invalidatedArea)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterCheck(System.Windows.Forms.TreeViewEventArgs)">
+            <summary>Sets the stub of TreeView.OnAfterCheck(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterCheckTreeViewEventArgs">
+            <summary>Sets the stub of TreeView.OnAfterCheck(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterCollapse(System.Windows.Forms.TreeViewEventArgs)">
+            <summary>Sets the stub of TreeView.OnAfterCollapse(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterCollapseTreeViewEventArgs">
+            <summary>Sets the stub of TreeView.OnAfterCollapse(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterExpand(System.Windows.Forms.TreeViewEventArgs)">
+            <summary>Sets the stub of TreeView.OnAfterExpand(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterExpandTreeViewEventArgs">
+            <summary>Sets the stub of TreeView.OnAfterExpand(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)">
+            <summary>Sets the stub of TreeView.OnAfterLabelEdit(NodeLabelEditEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterLabelEditNodeLabelEditEventArgs">
+            <summary>Sets the stub of TreeView.OnAfterLabelEdit(NodeLabelEditEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterSelect(System.Windows.Forms.TreeViewEventArgs)">
+            <summary>Sets the stub of TreeView.OnAfterSelect(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAfterSelectTreeViewEventArgs">
+            <summary>Sets the stub of TreeView.OnAfterSelect(TreeViewEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAutoSizeChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnAutoSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnAutoSizeChangedEventArgs">
+            <summary>Sets the stub of Control.OnAutoSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBackColorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBackColorChangedEventArgs">
+            <summary>Sets the stub of Control.OnBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBackgroundImageChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBackgroundImageChangedEventArgs">
+            <summary>Sets the stub of Control.OnBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBackgroundImageLayoutChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnBackgroundImageLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBackgroundImageLayoutChangedEventArgs">
+            <summary>Sets the stub of Control.OnBackgroundImageLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeCheck(System.Windows.Forms.TreeViewCancelEventArgs)">
+            <summary>Sets the stub of TreeView.OnBeforeCheck(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeCheckTreeViewCancelEventArgs">
+            <summary>Sets the stub of TreeView.OnBeforeCheck(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeCollapse(System.Windows.Forms.TreeViewCancelEventArgs)">
+            <summary>Sets the stub of TreeView.OnBeforeCollapse(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeCollapseTreeViewCancelEventArgs">
+            <summary>Sets the stub of TreeView.OnBeforeCollapse(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeExpand(System.Windows.Forms.TreeViewCancelEventArgs)">
+            <summary>Sets the stub of TreeView.OnBeforeExpand(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeExpandTreeViewCancelEventArgs">
+            <summary>Sets the stub of TreeView.OnBeforeExpand(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)">
+            <summary>Sets the stub of TreeView.OnBeforeLabelEdit(NodeLabelEditEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeLabelEditNodeLabelEditEventArgs">
+            <summary>Sets the stub of TreeView.OnBeforeLabelEdit(NodeLabelEditEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeSelect(System.Windows.Forms.TreeViewCancelEventArgs)">
+            <summary>Sets the stub of TreeView.OnBeforeSelect(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBeforeSelectTreeViewCancelEventArgs">
+            <summary>Sets the stub of TreeView.OnBeforeSelect(TreeViewCancelEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBindingContextChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnBindingContextChangedEventArgs">
+            <summary>Sets the stub of Control.OnBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnCausesValidationChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnCausesValidationChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnCausesValidationChangedEventArgs">
+            <summary>Sets the stub of Control.OnCausesValidationChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnChangeUICues(System.Windows.Forms.UICuesEventArgs)">
+            <summary>Sets the stub of Control.OnChangeUICues(UICuesEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnChangeUICuesUICuesEventArgs">
+            <summary>Sets the stub of Control.OnChangeUICues(UICuesEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnClick(System.EventArgs)">
+            <summary>Sets the stub of Control.OnClick(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnClickEventArgs">
+            <summary>Sets the stub of Control.OnClick(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnClientSizeChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnClientSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnClientSizeChangedEventArgs">
+            <summary>Sets the stub of Control.OnClientSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnContextMenuChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnContextMenuChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnContextMenuChangedEventArgs">
+            <summary>Sets the stub of Control.OnContextMenuChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnContextMenuStripChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnContextMenuStripChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnContextMenuStripChangedEventArgs">
+            <summary>Sets the stub of Control.OnContextMenuStripChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnControlAdded(System.Windows.Forms.ControlEventArgs)">
+            <summary>Sets the stub of Control.OnControlAdded(ControlEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnControlAddedControlEventArgs">
+            <summary>Sets the stub of Control.OnControlAdded(ControlEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnControlRemoved(System.Windows.Forms.ControlEventArgs)">
+            <summary>Sets the stub of Control.OnControlRemoved(ControlEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnControlRemovedControlEventArgs">
+            <summary>Sets the stub of Control.OnControlRemoved(ControlEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnCreateControl">
+            <summary>Sets the stub of Control.OnCreateControl()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnCreateControl01">
+            <summary>Sets the stub of Control.OnCreateControl()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnCursorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnCursorChangedEventArgs">
+            <summary>Sets the stub of Control.OnCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDockChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnDockChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDockChangedEventArgs">
+            <summary>Sets the stub of Control.OnDockChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDoubleClick(System.EventArgs)">
+            <summary>Sets the stub of Control.OnDoubleClick(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDoubleClickEventArgs">
+            <summary>Sets the stub of Control.OnDoubleClick(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDragDrop(System.Windows.Forms.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragDrop(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDragDropDragEventArgs">
+            <summary>Sets the stub of Control.OnDragDrop(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDragEnter(System.Windows.Forms.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragEnter(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDragEnterDragEventArgs">
+            <summary>Sets the stub of Control.OnDragEnter(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDragLeave(System.EventArgs)">
+            <summary>Sets the stub of Control.OnDragLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDragLeaveEventArgs">
+            <summary>Sets the stub of Control.OnDragLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDragOver(System.Windows.Forms.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragOver(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDragOverDragEventArgs">
+            <summary>Sets the stub of Control.OnDragOver(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDrawNode(System.Windows.Forms.DrawTreeNodeEventArgs)">
+            <summary>Sets the stub of TreeView.OnDrawNode(DrawTreeNodeEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnDrawNodeDrawTreeNodeEventArgs">
+            <summary>Sets the stub of TreeView.OnDrawNode(DrawTreeNodeEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnEnabledChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnEnabledChangedEventArgs">
+            <summary>Sets the stub of Control.OnEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnEnter(System.EventArgs)">
+            <summary>Sets the stub of Control.OnEnter(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnEnterEventArgs">
+            <summary>Sets the stub of Control.OnEnter(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnFontChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnFontChangedEventArgs">
+            <summary>Sets the stub of Control.OnFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnForeColorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnForeColorChangedEventArgs">
+            <summary>Sets the stub of Control.OnForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)">
+            <summary>Sets the stub of Control.OnGiveFeedback(GiveFeedbackEventArgs gfbevent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Sets the stub of Control.OnGiveFeedback(GiveFeedbackEventArgs gfbevent)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnGotFocus(System.EventArgs)">
+            <summary>Sets the stub of Control.OnGotFocus(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnGotFocusEventArgs">
+            <summary>Sets the stub of Control.OnGotFocus(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnHandleCreated(System.EventArgs)">
+            <summary>Sets the stub of TreeView.OnHandleCreated(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnHandleCreatedEventArgs">
+            <summary>Sets the stub of TreeView.OnHandleCreated(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnHandleDestroyed(System.EventArgs)">
+            <summary>Sets the stub of TreeView.OnHandleDestroyed(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnHandleDestroyedEventArgs">
+            <summary>Sets the stub of TreeView.OnHandleDestroyed(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnHelpRequested(System.Windows.Forms.HelpEventArgs)">
+            <summary>Sets the stub of Control.OnHelpRequested(HelpEventArgs hevent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnHelpRequestedHelpEventArgs">
+            <summary>Sets the stub of Control.OnHelpRequested(HelpEventArgs hevent)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnImeModeChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnImeModeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnImeModeChangedEventArgs">
+            <summary>Sets the stub of Control.OnImeModeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnInvalidated(System.Windows.Forms.InvalidateEventArgs)">
+            <summary>Sets the stub of Control.OnInvalidated(InvalidateEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnInvalidatedInvalidateEventArgs">
+            <summary>Sets the stub of Control.OnInvalidated(InvalidateEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)">
+            <summary>Sets the stub of TreeView.OnItemDrag(ItemDragEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnItemDragItemDragEventArgs">
+            <summary>Sets the stub of TreeView.OnItemDrag(ItemDragEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>Sets the stub of TreeView.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnKeyDownKeyEventArgs">
+            <summary>Sets the stub of TreeView.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>Sets the stub of TreeView.OnKeyPress(KeyPressEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnKeyPressKeyPressEventArgs">
+            <summary>Sets the stub of TreeView.OnKeyPress(KeyPressEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnKeyUp(System.Windows.Forms.KeyEventArgs)">
+            <summary>Sets the stub of TreeView.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnKeyUpKeyEventArgs">
+            <summary>Sets the stub of TreeView.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnLayout(System.Windows.Forms.LayoutEventArgs)">
+            <summary>Sets the stub of Control.OnLayout(LayoutEventArgs levent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnLayoutLayoutEventArgs">
+            <summary>Sets the stub of Control.OnLayout(LayoutEventArgs levent)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnLeave(System.EventArgs)">
+            <summary>Sets the stub of Control.OnLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnLeaveEventArgs">
+            <summary>Sets the stub of Control.OnLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnLocationChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnLocationChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnLocationChangedEventArgs">
+            <summary>Sets the stub of Control.OnLocationChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnLostFocus(System.EventArgs)">
+            <summary>Sets the stub of Control.OnLostFocus(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnLostFocusEventArgs">
+            <summary>Sets the stub of Control.OnLostFocus(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMarginChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMarginChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMarginChangedEventArgs">
+            <summary>Sets the stub of Control.OnMarginChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseCaptureChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMouseCaptureChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseCaptureChangedEventArgs">
+            <summary>Sets the stub of Control.OnMouseCaptureChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseClickMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseDoubleClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseDoubleClickMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseDoubleClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of TreeView.OnMouseDown(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseDownMouseEventArgs">
+            <summary>Sets the stub of TreeView.OnMouseDown(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseEnter(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMouseEnter(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseEnterEventArgs">
+            <summary>Sets the stub of Control.OnMouseEnter(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseHover(System.EventArgs)">
+            <summary>Sets the stub of TreeView.OnMouseHover(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseHoverEventArgs">
+            <summary>Sets the stub of TreeView.OnMouseHover(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseLeave(System.EventArgs)">
+            <summary>Sets the stub of TreeView.OnMouseLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseLeaveEventArgs">
+            <summary>Sets the stub of TreeView.OnMouseLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseMoveMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of TreeView.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseUpMouseEventArgs">
+            <summary>Sets the stub of TreeView.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseWheel(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMouseWheelMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseWheel(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMove(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMove(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnMoveEventArgs">
+            <summary>Sets the stub of Control.OnMove(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnNodeMouseClick(System.Windows.Forms.TreeNodeMouseClickEventArgs)">
+            <summary>Sets the stub of TreeView.OnNodeMouseClick(TreeNodeMouseClickEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnNodeMouseClickTreeNodeMouseClickEventArgs">
+            <summary>Sets the stub of TreeView.OnNodeMouseClick(TreeNodeMouseClickEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnNodeMouseDoubleClick(System.Windows.Forms.TreeNodeMouseClickEventArgs)">
+            <summary>Sets the stub of TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnNodeMouseDoubleClickTreeNodeMouseClickEventArgs">
+            <summary>Sets the stub of TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnNodeMouseHover(System.Windows.Forms.TreeNodeMouseHoverEventArgs)">
+            <summary>Sets the stub of TreeView.OnNodeMouseHover(TreeNodeMouseHoverEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnNodeMouseHoverTreeNodeMouseHoverEventArgs">
+            <summary>Sets the stub of TreeView.OnNodeMouseHover(TreeNodeMouseHoverEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnNotifyMessage(System.Windows.Forms.Message)">
+            <summary>Sets the stub of Control.OnNotifyMessage(Message m)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnNotifyMessageMessage">
+            <summary>Sets the stub of Control.OnNotifyMessage(Message m)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPaddingChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnPaddingChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPaddingChangedEventArgs">
+            <summary>Sets the stub of Control.OnPaddingChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>Sets the stub of Control.OnPaint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>Sets the stub of Control.OnPaintBackground(PaintEventArgs pevent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPaintBackgroundPaintEventArgs">
+            <summary>Sets the stub of Control.OnPaintBackground(PaintEventArgs pevent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPaintPaintEventArgs">
+            <summary>Sets the stub of Control.OnPaint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentBackColorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentBackColorChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentBackgroundImageChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentBackgroundImageChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentBindingContextChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentBindingContextChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentCursorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentCursorChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentEnabledChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentEnabledChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentFontChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentFontChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentForeColorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentForeColorChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentRightToLeftChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentRightToLeftChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentVisibleChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnParentVisibleChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPreviewKeyDown(System.Windows.Forms.PreviewKeyDownEventArgs)">
+            <summary>Sets the stub of Control.OnPreviewKeyDown(PreviewKeyDownEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPreviewKeyDownPreviewKeyDownEventArgs">
+            <summary>Sets the stub of Control.OnPreviewKeyDown(PreviewKeyDownEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPrint(System.Windows.Forms.PaintEventArgs)">
+            <summary>Sets the stub of Control.OnPrint(PaintEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnPrintPaintEventArgs">
+            <summary>Sets the stub of Control.OnPrint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)">
+            <summary>Sets the stub of Control.OnQueryContinueDrag(QueryContinueDragEventArgs qcdevent)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Sets the stub of Control.OnQueryContinueDrag(QueryContinueDragEventArgs qcdevent)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnRegionChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnRegionChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnRegionChangedEventArgs">
+            <summary>Sets the stub of Control.OnRegionChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnResize(System.EventArgs)">
+            <summary>Sets the stub of Control.OnResize(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnResizeEventArgs">
+            <summary>Sets the stub of Control.OnResize(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnRightToLeftChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnRightToLeftChangedEventArgs">
+            <summary>Sets the stub of Control.OnRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnRightToLeftLayoutChanged(System.EventArgs)">
+            <summary>Sets the stub of TreeView.OnRightToLeftLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnRightToLeftLayoutChangedEventArgs">
+            <summary>Sets the stub of TreeView.OnRightToLeftLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnSizeChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnSizeChangedEventArgs">
+            <summary>Sets the stub of Control.OnSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnStyleChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnStyleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnStyleChangedEventArgs">
+            <summary>Sets the stub of Control.OnStyleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnSystemColorsChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnSystemColorsChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnSystemColorsChangedEventArgs">
+            <summary>Sets the stub of Control.OnSystemColorsChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnTabIndexChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnTabIndexChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnTabIndexChangedEventArgs">
+            <summary>Sets the stub of Control.OnTabIndexChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnTabStopChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnTabStopChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnTabStopChangedEventArgs">
+            <summary>Sets the stub of Control.OnTabStopChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnTextChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnTextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnTextChangedEventArgs">
+            <summary>Sets the stub of Control.OnTextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnValidated(System.EventArgs)">
+            <summary>Sets the stub of Control.OnValidated(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnValidatedEventArgs">
+            <summary>Sets the stub of Control.OnValidated(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnValidating(System.ComponentModel.CancelEventArgs)">
+            <summary>Sets the stub of Control.OnValidating(CancelEventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnValidatingCancelEventArgs">
+            <summary>Sets the stub of Control.OnValidating(CancelEventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.OnVisibleChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.OnVisibleChangedEventArgs">
+            <summary>Sets the stub of Control.OnVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.PreProcessMessage(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Control.PreProcessMessage(Message&amp; msg)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.PreProcessMessageMessageRef">
+            <summary>Sets the stub of Control.PreProcessMessage(Message&amp; msg)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>Sets the stub of Control.ProcessCmdKey(Message&amp; msg, Keys keyData)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessCmdKeyMessageRefKeys">
+            <summary>Sets the stub of Control.ProcessCmdKey(Message&amp; msg, Keys keyData)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessDialogChar(System.Char)">
+            <summary>Sets the stub of Control.ProcessDialogChar(Char charCode)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessDialogCharChar">
+            <summary>Sets the stub of Control.ProcessDialogChar(Char charCode)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>Sets the stub of Control.ProcessDialogKey(Keys keyData)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessDialogKeyKeys">
+            <summary>Sets the stub of Control.ProcessDialogKey(Keys keyData)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessKeyEventArgs(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Control.ProcessKeyEventArgs(Message&amp; m)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessKeyEventArgsMessageRef">
+            <summary>Sets the stub of Control.ProcessKeyEventArgs(Message&amp; m)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessKeyMessage(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Control.ProcessKeyMessage(Message&amp; m)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessKeyMessageMessageRef">
+            <summary>Sets the stub of Control.ProcessKeyMessage(Message&amp; m)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Control.ProcessKeyPreview(Message&amp; m)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessKeyPreviewMessageRef">
+            <summary>Sets the stub of Control.ProcessKeyPreview(Message&amp; m)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessMnemonic(System.Char)">
+            <summary>Sets the stub of Control.ProcessMnemonic(Char charCode)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ProcessMnemonicChar">
+            <summary>Sets the stub of Control.ProcessMnemonic(Char charCode)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.Refresh">
+            <summary>Sets the stub of Control.Refresh()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.Refresh01">
+            <summary>Sets the stub of Control.Refresh()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetBackColor">
+            <summary>Sets the stub of Control.ResetBackColor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetBackColor01">
+            <summary>Sets the stub of Control.ResetBackColor()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetCursor">
+            <summary>Sets the stub of Control.ResetCursor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetCursor01">
+            <summary>Sets the stub of Control.ResetCursor()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetFont">
+            <summary>Sets the stub of Control.ResetFont()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetFont01">
+            <summary>Sets the stub of Control.ResetFont()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetForeColor">
+            <summary>Sets the stub of Control.ResetForeColor()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetForeColor01">
+            <summary>Sets the stub of Control.ResetForeColor()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetRightToLeft">
+            <summary>Sets the stub of Control.ResetRightToLeft()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetRightToLeft01">
+            <summary>Sets the stub of Control.ResetRightToLeft()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetText">
+            <summary>Sets the stub of Control.ResetText()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ResetText01">
+            <summary>Sets the stub of Control.ResetText()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.RightToLeft">
+            <summary>Sets the stub of Control.get_RightToLeft()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.RightToLeftGet">
+            <summary>Sets the stub of Control.get_RightToLeft()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.RightToLeftLayout">
+            <summary>Sets the stub of TreeView.get_RightToLeftLayout()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.RightToLeftLayoutGet">
+            <summary>Sets the stub of TreeView.get_RightToLeftLayout()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.RightToLeftLayoutSetBoolean">
+            <summary>Sets the stub of TreeView.set_RightToLeftLayout(Boolean value)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.RightToLeftSetRightToLeft">
+            <summary>Sets the stub of Control.set_RightToLeft(RightToLeft value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.ScaleChildren">
+            <summary>Sets the stub of Control.get_ScaleChildren()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ScaleChildrenGet">
+            <summary>Sets the stub of Control.get_ScaleChildren()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)">
+            <summary>Sets the stub of Control.ScaleControl(SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ScaleControlSizeFBoundsSpecified">
+            <summary>Sets the stub of Control.ScaleControl(SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ScaleCore(System.Single,System.Single)">
+            <summary>Sets the stub of Control.ScaleCore(Single dx, Single dy)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ScaleCoreSingleSingle">
+            <summary>Sets the stub of Control.ScaleCore(Single dx, Single dy)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.Select(System.Boolean,System.Boolean)">
+            <summary>Sets the stub of Control.Select(Boolean directed, Boolean forward)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.SelectBooleanBoolean">
+            <summary>Sets the stub of Control.Select(Boolean directed, Boolean forward)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
+            <summary>Sets the stub of Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.SetBoundsCoreInt32Int32Int32Int32BoundsSpecified">
+            <summary>Sets the stub of Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.SetClientSizeCore(System.Int32,System.Int32)">
+            <summary>Sets the stub of Control.SetClientSizeCore(Int32 x, Int32 y)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.SetClientSizeCoreInt32Int32">
+            <summary>Sets the stub of Control.SetClientSizeCore(Int32 x, Int32 y)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.SetVisibleCore(System.Boolean)">
+            <summary>Sets the stub of Control.SetVisibleCore(Boolean value)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.SetVisibleCoreBoolean">
+            <summary>Sets the stub of Control.SetVisibleCore(Boolean value)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.ShowFocusCues">
+            <summary>Sets the stub of Control.get_ShowFocusCues()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ShowFocusCuesGet">
+            <summary>Sets the stub of Control.get_ShowFocusCues()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.ShowKeyboardCues">
+            <summary>Sets the stub of Control.get_ShowKeyboardCues()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ShowKeyboardCuesGet">
+            <summary>Sets the stub of Control.get_ShowKeyboardCues()</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.Site">
+            <summary>Sets the stub of Control.get_Site()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.SiteGet">
+            <summary>Sets the stub of Control.get_Site()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.SiteSetISite">
+            <summary>Sets the stub of Control.set_Site(ISite value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.SizeFromClientSize(System.Drawing.Size)">
+            <summary>Sets the stub of Control.SizeFromClientSize(Size clientSize)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.SizeFromClientSizeSize">
+            <summary>Sets the stub of Control.SizeFromClientSize(Size clientSize)</summary>
+        </member>
+        <member name="P:CodersLab.Windows.Controls.Fakes.StubTreeView.Text">
+            <summary>Sets the stub of TreeView.get_Text()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.TextGet">
+            <summary>Sets the stub of TreeView.get_Text()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.TextSetString">
+            <summary>Sets the stub of TreeView.set_Text(String value)</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.ToString">
+            <summary>Sets the stub of TreeView.ToString()</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.ToString01">
+            <summary>Sets the stub of TreeView.ToString()</summary>
+        </member>
+        <member name="M:CodersLab.Windows.Controls.Fakes.StubTreeView.WndProc(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of TreeView.WndProc(Message&amp; m)</summary>
+        </member>
+        <member name="F:CodersLab.Windows.Controls.Fakes.StubTreeView.WndProcMessageRef">
+            <summary>Sets the stub of TreeView.WndProc(Message&amp; m)</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.CodersLabWindowsControlsTreeViewDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of CodersLab.Windows.Controls.TreeView</summary>
+        </member>
+    </members>
+</doc>
