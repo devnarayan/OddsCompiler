@@ -1,0 +1,53 @@
+﻿CREATE TABLE [dbo].[sf_page_templates] (
+    [theme]                      NVARCHAR (255)   NULL,
+    [view_state_encryption]      INT              NOT NULL,
+    [vrsion]                     INT              NOT NULL,
+    [validate_request]           TINYINT          NOT NULL,
+    [ui_culture]                 VARCHAR (255)    NULL,
+    [title_]                     NVARCHAR (255)   NULL,
+    [smart_navigation]           TINYINT          NOT NULL,
+    [sliding_expiration]         TINYINT          NOT NULL,
+    [show_in_navigation]         TINYINT          NOT NULL,
+    [response_encoding]          VARCHAR (255)    NULL,
+    [require_ssl]                TINYINT          NOT NULL,
+    [personalization_segment_id] UNIQUEIDENTIFIER NULL,
+    [personalization_master_id]  UNIQUEIDENTIFIER NULL,
+    [prent_template_id]          UNIQUEIDENTIFIER NULL,
+    [ownr]                       UNIQUEIDENTIFIER NULL,
+    [ordinal]                    SMALLINT         NOT NULL,
+    [nme]                        VARCHAR (255)    NULL,
+    [master_page]                VARCHAR (255)    NULL,
+    [maintain_scroll]            TINYINT          NOT NULL,
+    [locked_by]                  UNIQUEIDENTIFIER NULL,
+    [last_modified]              DATETIME         NULL,
+    [last_control_id]            INT              NOT NULL,
+    [keywords_]                  NVARCHAR (255)   NULL,
+    [ky]                         VARCHAR (255)    NULL,
+    [is_personalized]            TINYINT          NOT NULL,
+    [inherits_permissions]       TINYINT          NOT NULL,
+    [include_script_manger]      TINYINT          NOT NULL,
+    [id]                         UNIQUEIDENTIFIER NOT NULL,
+    [framework]                  INT              NULL,
+    [error_page]                 VARCHAR (255)    NULL,
+    [enable_view_state_mac]      TINYINT          NOT NULL,
+    [enable_view_state]          TINYINT          NOT NULL,
+    [enable_theming]             TINYINT          NOT NULL,
+    [enable_session_state]       TINYINT          NOT NULL,
+    [enable_event_validation]    TINYINT          NOT NULL,
+    [description_]               NVARCHAR (255)   NULL,
+    [culture]                    VARCHAR (255)    NULL,
+    [category]                   UNIQUEIDENTIFIER NULL,
+    [can_inherit_permissions]    TINYINT          NOT NULL,
+    [cache_output]               TINYINT          NOT NULL,
+    [cache_duration]             INT              NOT NULL,
+    [buffer_output]              TINYINT          NOT NULL,
+    [app_name]                   VARCHAR (50)     NULL,
+    [voa_version]                SMALLINT         NOT NULL,
+    CONSTRAINT [pk_sf_page_templates] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [idx_sf_pg_tmplts_prnt_tmplt_id]
+    ON [dbo].[sf_page_templates]([prent_template_id] ASC);
+

@@ -11,7 +11,8 @@ namespace OddsData
     {
        public static string GetConnectionString()
        {
-           return "Data Source=111.118.250.186;Initial Catalog=OddsChecker;User ID=sa;Password=Syno2009; Pooling=False;";
+           //return "Data Source=111.118.250.186;Initial Catalog=OddsChecker;User ID=sa;Password=Syno2009; Pooling=False;";
+           return "Data Source=DEVNAGAR;Initial Catalog=SFDefault_201712100926;Integrated Security=True;";
        }
     }
 }

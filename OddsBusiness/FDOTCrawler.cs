@@ -15,9 +15,9 @@ using System.Threading;
 
 namespace OddsBusiness
 {
-    public class FDOTCrawler 
+    public class FDOTCrawler
     {
-        public string CrawlIT(string link)
+        public string CrawlUrls(string link)
         {
             try
             {
@@ -26,7 +26,8 @@ namespace OddsBusiness
                 {
                     URL = link
                 };
-                ThreadPool.QueueUserWorkItem(new WaitCallback(CrawlAllLinks), tp);
+                CrawlAllLinks(tp);
+                //ThreadPool.QueueUserWorkItem(new WaitCallback(CrawlAllLinks), tp);
                 return "Command completed successfully";
             }
             catch (Exception ex)
@@ -35,7 +36,37 @@ namespace OddsBusiness
             }
         }
 
-        public void CrawlAllLinks(object threadparam)
+        public void CrawlData()
+        {
+
+            FDOTService _service = new FDOTService();
+            while (_service.IsLinkCrawlRemain() > 0)
+            {
+
+                var linkList = _service.GetUrlForLinkCrawl();
+                if (linkList != null)
+                {
+                    foreach (var link in linkList)
+                    {
+                        ThreadParameters tp = new ThreadParameters
+                        {
+                            URL = link.FullUrl
+                        };
+                        CrawlAllLinks(tp);
+
+                        // Update ulr status as IsLinkCrawled=True;
+                        _service.UpdateLinkCrawled(link);
+
+                        CrawlContents(tp);
+
+                        // Update url status as IsDataCrawled= True;
+                        _service.UpdateHtmlContentCrawled(link);
+                    }
+                }
+            }
+        }
+
+        private void CrawlAllLinks(object threadparam)
         {
             ThreadParameters p = threadparam as ThreadParameters;
             string url = p.URL;
@@ -48,29 +79,74 @@ namespace OddsBusiness
                 FDOTService crawldata = new FDOTService();
                 XmlDocument xmldoc = new XmlDocument();
                 List<UrlModel> linkList = new List<UrlModel>();
-                var list = doc.DocumentNode.SelectSingleNode("//ul[@id='sport-nav']//ul");
+                var list = doc.DocumentNode.SelectSingleNode("//body");
 
-                var nodes = list.SelectNodes("./a");
+                var nodes = list.SelectNodes(".//a");
                 if (nodes != null)
                 {
                     for (int i = 0; i < nodes.Count; i++)
                     {
-                        string link = "http://www.oddschecker.com" + nodes[0].Attributes["href"].Value;
+                        string link = nodes[i].Attributes["href"].Value;
+                        string fullLink = "";
+                        if (link.Contains("http://") || link.Contains("https://"))
+                        {
+                            fullLink = link;
+                        }
+                        else
+                        {
+                            fullLink = url + "/" + link;
+                        }
                         linkList.Add(new UrlModel()
                         {
-                            PageUrl = nodes[0].Attributes["href"].Value,
-                            FullUrl = "http://www.oddschecker.com" + nodes[0].Attributes["href"].Value
+                            PageUrl = link,
+                            FullUrl = fullLink,
+                            IsInDomain = fullLink.Contains(url)
                         });
                     }
                     xmldoc = GenerateXmlForPageUrls(linkList);
-                    crawldata.InsertLinks(xmldoc);
+                    crawldata.InsertLinks(linkList);
 
-                    TraceService("Data Inserted : --------Lague--------SportID: Footbal , URL:" + url + "\n");
+                    TraceService("Data Inserted : -------- herf-------- , URL:" + url + "\n");
                 }
             }
             catch (Exception ex)
             {
-                TraceService("Error  : --------Lague--------SportID: Footbal , URL:" + url + "\n");
+                TraceService("Error  : --------herf-------- URL:" + url + "\n");
+            }
+        }
+
+        private void CrawlContents(object threadparam)
+        {
+            ThreadParameters p = threadparam as ThreadParameters;
+            string url = p.URL;
+            try
+            {
+                TraceService("Crawling Started: --------Links--------, URL:" + url + "\n");
+
+                string html = Helper.GetWebSiteContent(url);
+                HtmlAgilityPack.HtmlDocument doc = Helper.LoadHtml(html);
+                FDOTService crawldata = new FDOTService();
+                var content = doc.DocumentNode.SelectSingleNode("//div[@id='content']");
+                var header = doc.DocumentNode.SelectSingleNode("//div[@id='header']");
+                var footer = doc.DocumentNode.SelectSingleNode("//div[@id='footer']");
+
+                if (content != null)
+                {
+                    var data = new UrlModel()
+                    {
+                        HtmlContent = content.OuterHtml,
+                        Header = header.OuterHtml,
+                        Footer = footer.OuterHtml
+                    };
+
+                    crawldata.UpdateHtmlData(data);
+
+                    TraceService("Data Inserted : -------- html data-------- , URL:" + url + "\n");
+                }
+            }
+            catch (Exception ex)
+            {
+                TraceService("Error  : --------html data-------- URL:" + url + "\n");
             }
         }
 
@@ -104,7 +180,7 @@ namespace OddsBusiness
             try
             {
                 //set up a filestream
-                FileStream fs = new FileStream(@"c:\OddsService\ScheduledService.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                FileStream fs = new FileStream(@"c:\FDOTService\ScheduledService.txt", FileMode.OpenOrCreate, FileAccess.Write);
 
                 //set up a streamwriter for adding text
                 StreamWriter sw = new StreamWriter(fs);

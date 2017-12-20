@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>FDOTDatabase</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{1a1da0f4-692b-4f09-a2dc-c6f746e419b9}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>FDOTDatabase</RootNamespace>
+    <AssemblyName>FDOTDatabase</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\sf_ec_customer.sql" />
+    <Build Include="dbo\Tables\sf_media_content_category3.sql" />
+    <Build Include="dbo\Tables\sf_libraries_sf_permissions.sql" />
+    <Build Include="dbo\Tables\OAConflicts.sql" />
+    <Build Include="dbo\Tables\sf_ec_customer_address.sql" />
+    <Build Include="dbo\Tables\sf_media_content_tags.sql" />
+    <Build Include="dbo\Tables\sf_md_cntnt_pblshd_trnslations.sql" />
+    <Build Include="dbo\Tables\OAImportConfigurations.sql" />
+    <Build Include="dbo\Tables\sf_ec_customer_money.sql" />
+    <Build Include="dbo\Tables\sf_media_content_tags2.sql" />
+    <Build Include="dbo\Tables\sf_md_content_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_scheduled_tasks.sql" />
+    <Build Include="dbo\Tables\OASyncImportSummary.sql" />
+    <Build Include="dbo\Tables\sf_ec_customer_statistic.sql" />
+    <Build Include="dbo\Tables\sf_media_content_tags3.sql" />
+    <Build Include="dbo\Tables\sf_mdia_content_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_pblshng_mppng_sf_pp_mppng_t.sql" />
+    <Build Include="dbo\Tables\OASyncListSummary.sql" />
+    <Build Include="dbo\Tables\sf_approval_tracking_record.sql" />
+    <Build Include="dbo\Tables\sf_ec_discount.sql" />
+    <Build Include="dbo\Tables\sf_media_content.sql" />
+    <Build Include="dbo\Tables\CrawledData.sql" />
+    <Build Include="dbo\Tables\sf_pblshng_mppng_src_prprty_nm.sql" />
+    <Build Include="dbo\Tables\OASyncLog.sql" />
+    <Build Include="dbo\Tables\sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_ec_discount_criteria.sql" />
+    <Build Include="dbo\Tables\sf_media_content_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_pblshng_mppng_sttngs_sf_pbl.sql" />
+    <Build Include="dbo\Tables\SyncSchedulerExecution.sql" />
+    <Build Include="dbo\Tables\sf_commnt_parent_group_ids.sql" />
+    <Build Include="dbo\Tables\sf_ec_exchange_rate_log.sql" />
+    <Build Include="dbo\Tables\sf_media_file_links.sql" />
+    <Build Include="dbo\Tables\sf_pblshng_pnt_sttngs_stp_kywr.sql" />
+    <Build Include="dbo\Tables\SyncTask.sql" />
+    <Build Include="dbo\Tables\sf_commnt_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_ec_next_order_number.sql" />
+    <Build Include="dbo\Tables\sf_idsrv_claims.sql" />
+    <Build Include="dbo\Tables\sf_media_file_urls.sql" />
+    <Build Include="dbo\Tables\sf_pblshng_pp_sttngs_cntnt_lnk.sql" />
+    <Build Include="dbo\Tables\SyncTaskExecution.sql" />
+    <Build Include="dbo\Tables\sf_content_link.sql" />
+    <Build Include="dbo\Tables\sf_ec_order.sql" />
+    <Build Include="dbo\Tables\sf_idsrv_consents.sql" />
+    <Build Include="dbo\Tables\sf_media_thumbnails.sql" />
+    <Build Include="dbo\Tables\sf_pblshng_pp_sttngs_ddtnl_dta.sql" />
+    <Build Include="dbo\Tables\SyncTaskLock.sql" />
+    <Build Include="dbo\Tables\sf_content_link_attrbutes.sql" />
+    <Build Include="dbo\Tables\sf_ec_order_address.sql" />
+    <Build Include="dbo\Tables\sf_idsrv_keys.sql" />
+    <Build Include="dbo\Tables\sf_pblshng_pp_sttngs_lngge_ids.sql" />
+    <Build Include="dbo\Tables\oakeygen.sql" />
+    <Build Include="dbo\Tables\sf_control_properties.sql" />
+    <Build Include="dbo\Tables\sf_ec_order_detail.sql" />
+    <Build Include="dbo\Tables\sf_idsrv_tokens.sql" />
+    <Build Include="dbo\Tables\sf_pipe_mapping_translation.sql" />
+    <Build Include="dbo\Tables\sf_draft_pages.sql" />
+    <Build Include="dbo\Tables\sf_ec_order_detail_var_lnk.sql" />
+    <Build Include="dbo\Tables\sf_ab_campaign.sql" />
+    <Build Include="dbo\Tables\sf_publishing_mapping.sql" />
+    <Build Include="dbo\Tables\sf_drft_pages_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_ec_order_discount.sql" />
+    <Build Include="dbo\Tables\sf_bounce_stat.sql" />
+    <Build Include="dbo\Tables\sf_publishing_mapping_settings.sql" />
+    <Build Include="dbo\Tables\sf_rbin_item.sql" />
+    <Build Include="dbo\Tables\sf_object_data.sql" />
+    <Build Include="dbo\Tables\sf_ec_order_download.sql" />
+    <Build Include="dbo\Tables\sf_campaign.sql" />
+    <Build Include="dbo\Tables\sf_publishing_pipe_settings.sql" />
+    <Build Include="dbo\Tables\sf_locks.sql" />
+    <Build Include="dbo\Tables\sf_object_data_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_ec_order_payment.sql" />
+    <Build Include="dbo\Tables\sf_campaign_link.sql" />
+    <Build Include="dbo\Tables\sf_publishing_point.sql" />
+    <Build Include="dbo\Tables\sf_tr_jbs.sql" />
+    <Build Include="dbo\Tables\sf_page_data.sql" />
+    <Build Include="dbo\Tables\sf_ec_order_statistic.sql" />
+    <Build Include="dbo\Tables\sf_campaign_sf_campaign_link.sql" />
+    <Build Include="dbo\Tables\sf_chunks.sql" />
+    <Build Include="dbo\Tables\sf_publishing_point_settings.sql" />
+    <Build Include="dbo\Tables\sf_tr_prjcts.sql" />
+    <Build Include="dbo\Tables\sf_page_data_attrbutes.sql" />
+    <Build Include="dbo\Tables\sf_ec_order_status_history.sql" />
+    <Build Include="dbo\Tables\sf_delivery_entry.sql" />
+    <Build Include="dbo\Tables\sf_failed_deliveries.sql" />
+    <Build Include="dbo\Tables\sf_publishing_throttle_settings.sql" />
+    <Build Include="dbo\Tables\sf_tr_sources.sql" />
+    <Build Include="dbo\Tables\sf_page_data_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_ec_payment_method.sql" />
+    <Build Include="dbo\Tables\sf_dynamic_list.sql" />
+    <Build Include="dbo\Tables\sf_notif_cmplt_msg_job.sql" />
+    <Build Include="dbo\Tables\sf_tr_trnsltns.sql" />
+    <Build Include="dbo\Tables\sf_page_node.sql" />
+    <Build Include="dbo\Tables\sf_meta_attribute.sql" />
+    <Build Include="dbo\Tables\sf_ec_tax.sql" />
+    <Build Include="dbo\Tables\sf_issue_subscriber_report.sql" />
+    <Build Include="dbo\Tables\sf_notif_msg_job.sql" />
+    <Build Include="dbo\Tables\sf_tr_units.sql" />
+    <Build Include="dbo\Tables\sf_page_node_attrbutes.sql" />
+    <Build Include="dbo\Tables\sf_meta_data_mapping.sql" />
+    <Build Include="dbo\Tables\sf_ec_tax_class.sql" />
+    <Build Include="dbo\Tables\sf_link_click_stat.sql" />
+    <Build Include="dbo\Tables\sf_notif_msg_job_log.sql" />
+    <Build Include="dbo\Tables\sf_ab_test.sql" />
+    <Build Include="dbo\Tables\sf_page_node_references.sql" />
+    <Build Include="dbo\Tables\sf_meta_fields.sql" />
+    <Build Include="dbo\Tables\sf_ec_wishlist.sql" />
+    <Build Include="dbo\Tables\sf_lst.sql" />
+    <Build Include="dbo\Tables\sf_notif_msg_template.sql" />
+    <Build Include="dbo\Tables\sf_ab_test_goal.sql" />
+    <Build Include="dbo\Tables\sf_page_node_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_meta_index.sql" />
+    <Build Include="dbo\Tables\sf_ec_wishlist_detail.sql" />
+    <Build Include="dbo\Tables\sf_lst_sf_subscriber.sql" />
+    <Build Include="dbo\Tables\sf_notif_subscr_list.sql" />
+    <Build Include="dbo\Tables\sf_ab_test_variation.sql" />
+    <Build Include="dbo\Tables\sf_page_templates.sql" />
+    <Build Include="dbo\Tables\sf_meta_index_composite_fields.sql" />
+    <Build Include="dbo\Tables\sf_news_items.sql" />
+    <Build Include="dbo\Tables\sf_ec_wishlist_detail_var_lnk.sql" />
+    <Build Include="dbo\Tables\sf_message_body.sql" />
+    <Build Include="dbo\Tables\sf_notif_subscribers.sql" />
+    <Build Include="dbo\Tables\sf_pckgng_addn_lnks.sql" />
+    <Build Include="dbo\Tables\sf_pg_dt_pblished_translations.sql" />
+    <Build Include="dbo\Tables\sf_meta_type_descriptions.sql" />
+    <Build Include="dbo\Tables\sf_news_items_category.sql" />
+    <Build Include="dbo\Tables\sf_ec_shippingmethod.sql" />
+    <Build Include="dbo\Tables\sf_open_stat.sql" />
+    <Build Include="dbo\Tables\sf_notif_subscriptions.sql" />
+    <Build Include="dbo\Tables\sf_pckgng_addns.sql" />
+    <Build Include="dbo\Tables\sf_pg_nd_prmssnst_bjct_ttl_rs_.sql" />
+    <Build Include="dbo\Tables\sf_meta_types.sql" />
+    <Build Include="dbo\Tables\sf_news_items_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_addresses.sql" />
+    <Build Include="dbo\Tables\sf_subscriber.sql" />
+    <Build Include="dbo\Tables\sf_ntf_msg_jb_cstm_mssg_haders.sql" />
+    <Build Include="dbo\Tables\sf_pckgng_addns_err_stts.sql" />
+    <Build Include="dbo\Tables\sf_pg_templates_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_meta_types_section_names.sql" />
+    <Build Include="dbo\Tables\sf_news_items_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_dynamic_content.sql" />
+    <Build Include="dbo\Tables\sf_subscription_info.sql" />
+    <Build Include="dbo\Tables\sf_ntf_msg_jb_xcldd_rslvd_kys_.sql" />
+    <Build Include="dbo\Tables\sf_pckgng_addns_stts.sql" />
+    <Build Include="dbo\Tables\sf_pg_tmpltes_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_module_vrsn.sql" />
+    <Build Include="dbo\Tables\sf_news_items_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_dynmc_cntent_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_unsubscription_info.sql" />
+    <Build Include="dbo\Tables\sf_ntf_sbscrbrs_cstm_prperties.sql" />
+    <Build Include="dbo\Tables\sf_pckgng_pckgs.sql" />
+    <Build Include="dbo\Tables\sf_pg_tmplts_pblshd_trnsltions.sql" />
+    <Build Include="dbo\Tables\sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_news_items_tags.sql" />
+    <Build Include="dbo\Tables\sf_dynmc_cntnt_pblshd_trnsltns.sql" />
+    <Build Include="dbo\Tables\sf_cs_comments.sql" />
+    <Build Include="dbo\Tables\sf_presentation_data.sql" />
+    <Build Include="dbo\Tables\sf_permissions_inheritance_map.sql" />
+    <Build Include="dbo\Tables\sf_nws_tms_pblshd_translations.sql" />
+    <Build Include="dbo\Tables\sf_dynmc_cntnt_sf_lnguage_data.sql" />
+    <Build Include="dbo\Tables\sf_cs_groups.sql" />
+    <Build Include="dbo\Tables\sf_schema_vrsns.sql" />
+    <Build Include="dbo\Tables\sf_form_description.sql" />
+    <Build Include="dbo\Tables\sf_mb_dnc_cnt_provider.sql" />
+    <Build Include="dbo\Tables\sf_cntent_items_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_cs_threads.sql" />
+    <Build Include="dbo\Tables\sf_schema_vrsns_meta_types.sql" />
+    <Build Include="dbo\Tables\sf_form_description_attrbutes.sql" />
+    <Build Include="dbo\Tables\sf_mb_dnc_cnt_prvdr_sf_prmssns.sql" />
+    <Build Include="dbo\Tables\sf_cntnt_tems_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_ec_prdct_book.sql" />
+    <Build Include="dbo\Tables\sf_scrity_roots_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_form_description_category.sql" />
+    <Build Include="dbo\Tables\sf_mb_dynamic_module.sql" />
+    <Build Include="dbo\Tables\sf_cntnt_tms_pblshd_trnsltions.sql" />
+    <Build Include="dbo\Tables\sf_ec_prdct_generalproduct.sql" />
+    <Build Include="dbo\Tables\sf_scrty_rts_prmssnst_bjct_ttl.sql" />
+    <Build Include="dbo\Tables\sf_form_description_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_mb_dynamic_module_field.sql" />
+    <Build Include="dbo\Tables\sf_content_items.sql" />
+    <Build Include="dbo\Tables\sf_ec_prdct_software.sql" />
+    <Build Include="dbo\Tables\sf_scrty_rts_spprtd_prmssn_sts.sql" />
+    <Build Include="dbo\Tables\sf_form_description_tags.sql" />
+    <Build Include="dbo\Tables\sf_mb_dynamic_module_type.sql" />
+    <Build Include="dbo\Tables\sf_content_items_category.sql" />
+    <Build Include="dbo\Tables\sf_blg_psts_pblshd_trnslations.sql" />
+    <Build Include="dbo\Tables\sf_ec_prdct_song.sql" />
+    <Build Include="dbo\Tables\sf_security_roots.sql" />
+    <Build Include="dbo\Tables\sf_form_entry.sql" />
+    <Build Include="dbo\Tables\sf_mb_dynmc_mdl_fld_sf_prmssns.sql" />
+    <Build Include="dbo\Tables\sf_content_items_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_blog_posts.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_department.sql" />
+    <Build Include="dbo\Tables\voa_keygen.sql" />
+    <Build Include="dbo\Tables\sf_frm_dscrptn_pblshd_trnsltns.sql" />
+    <Build Include="dbo\Tables\sf_mb_dynmc_mdl_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_content_items_tags.sql" />
+    <Build Include="dbo\Tables\sf_blog_posts_category.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_tags.sql" />
+    <Build Include="dbo\Tables\sf_frm_dscrptn_sf_lnguage_data.sql" />
+    <Build Include="dbo\Tables\sf_mb_dynmc_mdl_typ_sf_prmssns.sql" />
+    <Build Include="dbo\Tables\sf_blog_posts_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_frm_dscrptn_sf_prsnttn_data.sql" />
+    <Build Include="dbo\Tables\sf_mb_fields_backend_section.sql" />
+    <Build Include="dbo\Tables\sf_blog_posts_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_frm_dscrpton_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_blog_posts_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_version_chnges.sql" />
+    <Build Include="dbo\Tables\sf_config_variables.sql" />
+    <Build Include="dbo\Tables\sf_blog_posts_tags.sql" />
+    <Build Include="dbo\Tables\sf_version_serial_info.sql" />
+    <Build Include="dbo\Tables\sf_dynamic_type_base.sql" />
+    <Build Include="dbo\Tables\sf_blogs.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_type.sql" />
+    <Build Include="dbo\Tables\sf_version_trunks.sql" />
+    <Build Include="dbo\Tables\sf_xml_config_items.sql" />
+    <Build Include="dbo\Tables\sf_blogs_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_c_prdct_pblshd_translations.sql" />
+    <Build Include="dbo\Tables\sf_vesion_items.sql" />
+    <Build Include="dbo\Tables\sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_blogs_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_c_prdct_ttrbt_pblshd_trnslt.sql" />
+    <Build Include="dbo\Tables\sf_user_action.sql" />
+    <Build Include="dbo\Tables\sf_manager_info.sql" />
+    <Build Include="dbo\Tables\sf_c_prdct_ttrbt_sf_lngge_data.sql" />
+    <Build Include="dbo\Tables\sf_lic_user_activity.sql" />
+    <Build Include="dbo\Tables\sf_roles.sql" />
+    <Build Include="dbo\Tables\sf_rdsgn_md_qry_lnk_sf_rdsgn_m.sql" />
+    <Build Include="dbo\Tables\sf_c_prdct_ttrbt_vl_pblshd_trn.sql" />
+    <Build Include="dbo\Tables\sf_list_items.sql" />
+    <Build Include="dbo\Tables\sf_workflow_definition.sql" />
+    <Build Include="dbo\Tables\sf_url_data.sql" />
+    <Build Include="dbo\Tables\sf_rdsgn_media_query.sql" />
+    <Build Include="dbo\Tables\sf_c_prdct_ttrbt_vl_sf_lngg_dt.sql" />
+    <Build Include="dbo\Tables\sf_list_items_category.sql" />
+    <Build Include="dbo\Tables\sf_workflow_permission.sql" />
+    <Build Include="dbo\Tables\sf_user_link.sql" />
+    <Build Include="dbo\Tables\sf_rdsgn_media_query_link.sql" />
+    <Build Include="dbo\Tables\sf_ec_prices.sql" />
+    <Build Include="dbo\Tables\sf_list_items_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_workflow_scope.sql" />
+    <Build Include="dbo\Tables\sf_users.sql" />
+    <Build Include="dbo\Tables\sf_rdsgn_media_query_rule.sql" />
+    <Build Include="dbo\Tables\sf_ec_product.sql" />
+    <Build Include="dbo\Tables\sf_list_items_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_workflow_scope_selected_ids.sql" />
+    <Build Include="dbo\Tables\sf_ec_customer_profile.sql" />
+    <Build Include="dbo\Tables\sf_rdsgn_nav_trnsfrmtn.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_attribute.sql" />
+    <Build Include="dbo\Tables\sf_list_items_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_wrkflw_dfntn_ddtnl_frst_lvl.sql" />
+    <Build Include="dbo\Tables\sf_sitefinity_profile.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_attribute_link.sql" />
+    <Build Include="dbo\Tables\sf_list_items_tags.sql" />
+    <Build Include="dbo\Tables\sf_calendars.sql" />
+    <Build Include="dbo\Tables\sf_wrkflw_dfntn_ddtnl_scnd_lvl.sql" />
+    <Build Include="dbo\Tables\sf_user_profile.sql" />
+    <Build Include="dbo\Tables\sf_forum_groups.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_attribute_value.sql" />
+    <Build Include="dbo\Tables\sf_lists.sql" />
+    <Build Include="dbo\Tables\sf_events.sql" />
+    <Build Include="dbo\Tables\sf_wrkflw_dfntn_prmssnst_bjct_.sql" />
+    <Build Include="dbo\Tables\sf_user_profile_link.sql" />
+    <Build Include="dbo\Tables\sf_forum_groups_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_rating.sql" />
+    <Build Include="dbo\Tables\sf_lists_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_events_category.sql" />
+    <Build Include="dbo\Tables\sf_wrkflw_dfntn_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_forum_posts.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_lists_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_events_sf_commnt.sql" />
+    <Build Include="dbo\Tables\sf_wrkflw_dfntn_spprtd_prmssn_.sql" />
+    <Build Include="dbo\Tables\sf_facet_facets.sql" />
+    <Build Include="dbo\Tables\sf_forum_threads.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_variation.sql" />
+    <Build Include="dbo\Tables\sf_lst_tms_pblshd_translations.sql" />
+    <Build Include="dbo\Tables\sf_events_sf_language_data.sql" />
+    <Build Include="dbo\Tables\sf_network_subtaxa.sql" />
+    <Build Include="dbo\Tables\sf_forums.sql" />
+    <Build Include="dbo\Tables\sf_ec_product_variation_detail.sql" />
+    <Build Include="dbo\Tables\sf_events_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_network_supertaxa.sql" />
+    <Build Include="dbo\Tables\sf_forums_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_events_tags.sql" />
+    <Build Include="dbo\Tables\sf_site_item_links.sql" />
+    <Build Include="dbo\Tables\sf_vnts_published_translations.sql" />
+    <Build Include="dbo\Tables\sf_synonyms.sql" />
+    <Build Include="dbo\Tables\sf_app_setting.sql" />
+    <Build Include="dbo\Tables\sf_taxa.sql" />
+    <Build Include="dbo\Tables\sf_cnt_location_filters.sql" />
+    <Build Include="dbo\Tables\sf_prs_criteria_group.sql" />
+    <Build Include="dbo\Tables\sf_taxa_attrbutes.sql" />
+    <Build Include="dbo\Tables\sf_cnt_locations.sql" />
+    <Build Include="dbo\Tables\sf_prs_criterion.sql" />
+    <Build Include="dbo\Tables\sf_taxonomies.sql" />
+    <Build Include="dbo\Tables\sf_ec_cart_address.sql" />
+    <Build Include="dbo\Tables\sf_site_data_source_links.sql" />
+    <Build Include="dbo\Tables\sf_prs_crtr_grp_sf_prs_crtrion.sql" />
+    <Build Include="dbo\Tables\sf_taxonomies_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_ec_cart_detail.sql" />
+    <Build Include="dbo\Tables\sf_content_relation.sql" />
+    <Build Include="dbo\Tables\sf_sites.sql" />
+    <Build Include="dbo\Tables\sf_prs_segment.sql" />
+    <Build Include="dbo\Tables\sf_taxonomy_statistic.sql" />
+    <Build Include="dbo\Tables\sf_ec_cart_detail_var_lnk.sql" />
+    <Build Include="dbo\Tables\sf_stat_sentence.sql" />
+    <Build Include="dbo\Tables\sf_counters.sql" />
+    <Build Include="dbo\Tables\sf_sites_culture_keys.sql" />
+    <Build Include="dbo\Tables\sf_prs_sgmnt_sf_prs_crtr_group.sql" />
+    <Build Include="dbo\Tables\sf_txnms_prmssnst_bjct_ttl_rs_.sql" />
+    <Build Include="dbo\Tables\sf_ec_cart_discount.sql" />
+    <Build Include="dbo\Tables\sf_dashboard_log.sql" />
+    <Build Include="dbo\Tables\sf_folders.sql" />
+    <Build Include="dbo\Tables\sf_sites_domain_aliases.sql" />
+    <Build Include="dbo\Tables\sf_txnms_spprtd_prmission_sets.sql" />
+    <Build Include="dbo\Tables\sf_ec_cart_order.sql" />
+    <Build Include="dbo\Tables\sf_dashboard_watchlist.sql" />
+    <Build Include="dbo\Tables\sf_lbraries_thumbnail_profiles.sql" />
+    <Build Include="dbo\Tables\sf_sites_sf_permissions.sql" />
+    <Build Include="dbo\Tables\sf_ec_cart_payment.sql" />
+    <Build Include="dbo\Tables\sf_media_content_category.sql" />
+    <Build Include="dbo\Tables\sf_libraries.sql" />
+    <Build Include="dbo\Tables\sf_sts_sf_st_data_source_links.sql" />
+    <Build Include="dbo\Tables\sf_files_monitor_data.sql" />
+    <Build Include="dbo\Tables\sf_ec_coupon_code.sql" />
+    <Build Include="dbo\Tables\sf_media_content_category2.sql" />
+    <Build Include="dbo\Tables\sf_libraries_sf_commnt.sql" />
+    <Build Include="dbo\Tables\ImportWarnings.sql" />
+  </ItemGroup>
+</Project>

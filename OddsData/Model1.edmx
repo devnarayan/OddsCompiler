@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SFDefault_201712100926Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CrawledData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PageUrl" Type="nvarchar" MaxLength="450" />
+          <Property Name="FullUrl" Type="nvarchar(max)" />
+          <Property Name="CrawlDate" Type="datetime" />
+          <Property Name="IsLinkCrawled" Type="bit" />
+          <Property Name="IsDataCrawled" Type="bit" />
+          <Property Name="IsInDomain" Type="bit" />
+          <Property Name="Header" Type="text" />
+          <Property Name="Footer" Type="text" />
+          <Property Name="HtmlContent" Type="text" />
+        </EntityType>
+        <EntityContainer Name="SFDefault_201712100926ModelStoreContainer">
+          <EntitySet Name="CrawledData" EntityType="Self.CrawledData" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SFDefault_201712100926Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CrawledData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PageUrl" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Name="FullUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CrawlDate" Type="DateTime" Precision="3" />
+          <Property Name="IsLinkCrawled" Type="Boolean" />
+          <Property Name="IsDataCrawled" Type="Boolean" />
+          <Property Name="IsInDomain" Type="Boolean" />
+          <Property Name="Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Footer" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="HtmlContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="SFDefault_201712100926Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CrawledDatas" EntityType="Self.CrawledData" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SFDefault_201712100926ModelStoreContainer" CdmEntityContainer="SFDefault_201712100926Entities">
+          <EntitySetMapping Name="CrawledDatas">
+            <EntityTypeMapping TypeName="SFDefault_201712100926Model.CrawledData">
+              <MappingFragment StoreEntitySet="CrawledData">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
+                <ScalarProperty Name="FullUrl" ColumnName="FullUrl" />
+                <ScalarProperty Name="CrawlDate" ColumnName="CrawlDate" />
+                <ScalarProperty Name="IsLinkCrawled" ColumnName="IsLinkCrawled" />
+                <ScalarProperty Name="IsDataCrawled" ColumnName="IsDataCrawled" />
+                <ScalarProperty Name="IsInDomain" ColumnName="IsInDomain" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+                <ScalarProperty Name="Footer" ColumnName="Footer" />
+                <ScalarProperty Name="HtmlContent" ColumnName="HtmlContent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

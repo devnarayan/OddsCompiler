@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[SyncTaskLock] (
+    [TaskId] UNIQUEIDENTIFIER NOT NULL,
+    CONSTRAINT [pk_SyncTaskLock] PRIMARY KEY CLUSTERED ([TaskId] ASC)
+);
+

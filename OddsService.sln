@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddsBusiness", "OddsBusiness\OddsBusiness.csproj", "{47480577-3D84-4584-8298-FDF5CE35AE08}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackCrawler", "BackCrawler\BackCrawler.csproj", "{87B3DE75-8F5C-40A9-9691-AB49B0A3C2B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDOTCrawlerApp", "FDOTCrawlerApp\FDOTCrawlerApp.csproj", "{8642B647-78D5-4B36-8528-99A69BF28CE3}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FDOTDatabase", "FDOTDatabase\FDOTDatabase.sqlproj", "{1A1DA0F4-692B-4F09-A2DC-C6F746E419B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,12 @@ Global
 		{8642B647-78D5-4B36-8528-99A69BF28CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8642B647-78D5-4B36-8528-99A69BF28CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8642B647-78D5-4B36-8528-99A69BF28CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1DA0F4-692B-4F09-A2DC-C6F746E419B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1DA0F4-692B-4F09-A2DC-C6F746E419B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1DA0F4-692B-4F09-A2DC-C6F746E419B9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1A1DA0F4-692B-4F09-A2DC-C6F746E419B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1DA0F4-692B-4F09-A2DC-C6F746E419B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1DA0F4-692B-4F09-A2DC-C6F746E419B9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

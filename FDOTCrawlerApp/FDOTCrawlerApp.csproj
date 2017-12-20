@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OddsCheckerService\OddsCheckerService.csproj">
-      <Project>{f179cd8f-e24d-4a4f-973d-7024582069a1}</Project>
-      <Name>OddsCheckerService</Name>
+    <ProjectReference Include="..\OddsBusiness\OddsBusiness.csproj">
+      <Project>{47480577-3d84-4584-8298-fdf5ce35ae08}</Project>
+      <Name>OddsBusiness</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
