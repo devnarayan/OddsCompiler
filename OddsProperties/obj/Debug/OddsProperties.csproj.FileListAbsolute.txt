@@ -30,8 +30,3 @@ D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsPrope
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsProperties\bin\Debug\OddsProperties.pdb
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsProperties\obj\Debug\OddsProperties.dll
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsProperties\obj\Debug\OddsProperties.pdb
-C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\bin\Debug\OddsProperties.dll
-C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\bin\Debug\OddsProperties.pdb
-C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\obj\Debug\OddsProperties.csprojResolveAssemblyReference.cache
-C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\obj\Debug\OddsProperties.dll
-C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\obj\Debug\OddsProperties.pdb

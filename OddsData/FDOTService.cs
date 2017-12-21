@@ -97,6 +97,7 @@ namespace OddsData
         {
             SFDefault_201712100926Entities context = new SFDefault_201712100926Entities();
             var data = context.CrawledDatas.Where(st => st.IsInDomain == true && st.IsLinkCrawled == false).ToList();
+            Mapper.CreateMap<CrawledData, UrlModel>();
             var urlModel = Mapper.Map<List<CrawledData>, List<UrlModel>>(data);
             return urlModel;
             //using (SqlConnection objConn = new SqlConnection(OddsConnection.GetConnectionString()))

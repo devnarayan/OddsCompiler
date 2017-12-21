@@ -44,3 +44,5 @@ Temporary Items
 /.vs/OddsService/v15/Server/sqlite3/db.lock
 /.vs/OddsService/v15/Server/sqlite3/storage.ide
 /.vs/OddsService/v15/Server/sqlite3
+/BackCrawler/bin/Debug
+/.vs/FDOTCrawler/v15

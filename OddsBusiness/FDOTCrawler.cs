@@ -52,12 +52,31 @@ namespace OddsBusiness
                         {
                             URL = link.FullUrl
                         };
-                        CrawlAllLinks(tp);
+                        string ext = Path.GetExtension(link.FullUrl);
+                        if (ext == null) ext = "";
+                        string skipExtension = ".pdf,.doc,.exe,.dotx,.xlsx,.xml,.docx,.xls";
+                        if (skipExtension.Contains(ext) && ext != "")
+                        {
+                            // Skip this file format.
+                            Console.WriteLine("--------Skipped Extension " + ext);
+                        }
+                        else
+                        {
+                            CrawlAllLinks(tp);
+                        }
 
                         // Update ulr status as IsLinkCrawled=True;
                         _service.UpdateLinkCrawled(link);
 
-                        CrawlContents(tp);
+                        if (skipExtension.Contains(ext) && ext!="")
+                        {
+                            // Skip this file format.
+                            Console.WriteLine("--------Skipped Extension " + ext);
+                        }
+                        else
+                        {
+                            CrawlContents(link);
+                        }
 
                         // Update url status as IsDataCrawled= True;
                         _service.UpdateHtmlContentCrawled(link);
@@ -72,6 +91,7 @@ namespace OddsBusiness
             string url = p.URL;
             try
             {
+                Console.WriteLine("Link Crawling " + p.URL);
                 TraceService("Crawling Started: --------Links--------, URL:" + url + "\n");
 
                 string html = Helper.GetWebSiteContent(url);
@@ -81,9 +101,13 @@ namespace OddsBusiness
                 List<UrlModel> linkList = new List<UrlModel>();
                 var list = doc.DocumentNode.SelectSingleNode("//body");
 
+                Uri myUri = new Uri(url);
+                string host = myUri.Host;
+
                 var nodes = list.SelectNodes(".//a");
                 if (nodes != null)
                 {
+                    Console.WriteLine("Total links: " + nodes.Count);
                     for (int i = 0; i < nodes.Count; i++)
                     {
                         string link = nodes[i].Attributes["href"].Value;
@@ -100,7 +124,7 @@ namespace OddsBusiness
                         {
                             PageUrl = link,
                             FullUrl = fullLink,
-                            IsInDomain = fullLink.Contains(url)
+                            IsInDomain = fullLink.Contains(host)
                         });
                     }
                     xmldoc = GenerateXmlForPageUrls(linkList);
@@ -115,15 +139,22 @@ namespace OddsBusiness
             }
         }
 
-        private void CrawlContents(object threadparam)
+        private void CrawlContents(UrlModel model)
         {
-            ThreadParameters p = threadparam as ThreadParameters;
-            string url = p.URL;
             try
             {
-                TraceService("Crawling Started: --------Links--------, URL:" + url + "\n");
+                if (model.FullUrl.Contains("../"))
+                {
+                    string file2 = Path.GetFileName(model.FullUrl);
+                    model.FullUrl = model.FullUrl.Replace(file2, "");
+                    Console.WriteLine("----Removed file name " + file2);
+                }
 
-                string html = Helper.GetWebSiteContent(url);
+
+                Console.WriteLine("Content Crawling " + model.PageUrl);
+                TraceService("Crawling Started: --------Links--------, URL:" + model.FullUrl + "\n");
+
+                string html = Helper.GetWebSiteContent(model.FullUrl);
                 HtmlAgilityPack.HtmlDocument doc = Helper.LoadHtml(html);
                 FDOTService crawldata = new FDOTService();
                 var content = doc.DocumentNode.SelectSingleNode("//div[@id='content']");
@@ -134,6 +165,7 @@ namespace OddsBusiness
                 {
                     var data = new UrlModel()
                     {
+                        Id=model.Id,
                         HtmlContent = content.OuterHtml,
                         Header = header.OuterHtml,
                         Footer = footer.OuterHtml
@@ -141,12 +173,12 @@ namespace OddsBusiness
 
                     crawldata.UpdateHtmlData(data);
 
-                    TraceService("Data Inserted : -------- html data-------- , URL:" + url + "\n");
+                    TraceService("Data Inserted : -------- html data-------- , URL:" + model.FullUrl + "\n");
                 }
             }
             catch (Exception ex)
             {
-                TraceService("Error  : --------html data-------- URL:" + url + "\n");
+                TraceService("Error  : --------html data-------- URL:" + model.FullUrl + "\n");
             }
         }
 

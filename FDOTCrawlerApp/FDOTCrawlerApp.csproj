@@ -32,8 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,11 +52,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OddsBusiness\OddsBusiness.csproj">
       <Project>{47480577-3d84-4584-8298-fdf5ce35ae08}</Project>
       <Name>OddsBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OddsData\OddsData.csproj">
+      <Project>{3f5e3e71-b79a-4f58-a500-b58d7bfe8f80}</Project>
+      <Name>OddsData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OddsProperties\OddsProperties.csproj">
+      <Project>{E76BBD2D-FF42-4938-8A07-A20DA7282C97}</Project>
+      <Name>OddsProperties</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
