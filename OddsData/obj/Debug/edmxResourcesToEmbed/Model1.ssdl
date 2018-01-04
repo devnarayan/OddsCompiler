@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SFDefault_201712100926Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CrawlDirectory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="AddedOn" Type="datetime" Nullable="false" />
+    <Property Name="IsPushed" Type="bit" Nullable="false" />
+    <Property Name="PushedOn" Type="datetime" />
+    <Property Name="TotalPages" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CrawledData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PageUrl" Type="nvarchar" MaxLength="450" />
+    <Property Name="FullUrl2" Type="nvarchar(max)" />
+    <Property Name="FullUrl" Type="nvarchar(max)" />
+    <Property Name="CrawlDate" Type="datetime" />
+    <Property Name="IsLinkCrawled" Type="bit" />
+    <Property Name="IsDataCrawled" Type="bit" />
+    <Property Name="IsInDomain" Type="bit" />
+    <Property Name="Header" Type="text" />
+    <Property Name="Footer" Type="text" />
+    <Property Name="HtmlContent" Type="text" />
+    <Property Name="IsHtmlPage" Type="bit" />
+    <Property Name="IsHtmlPushed" Type="bit" />
+    <Property Name="PushDate" Type="datetime" />
+    <Property Name="SFPageId" Type="nvarchar" MaxLength="256" />
+    <Property Name="SFPageTitle" Type="nvarchar" MaxLength="256" />
+    <Property Name="ParentNodeId" Type="nvarchar" MaxLength="256" />
+    <Property Name="DirectoryName" Type="nvarchar" MaxLength="450" />
+    <Property Name="NewUrl" Type="nvarchar" MaxLength="450" />
+  </EntityType>
+  <EntityType Name="CrawlTemplates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="256" />
+    <Property Name="LayoutControlId" Type="nvarchar" MaxLength="256" />
+    <Property Name="LayoutControlCaption" Type="nvarchar" MaxLength="256" />
+    <Property Name="PlaceholderId" Type="nvarchar" MaxLength="256" />
+    <Property Name="PlaceholderCaption" Type="nvarchar" MaxLength="256" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="SFDefault_201712100926ModelStoreContainer">
+    <EntitySet Name="CrawlDirectory" EntityType="Self.CrawlDirectory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CrawledData" EntityType="Self.CrawledData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CrawlTemplates" EntityType="Self.CrawlTemplates" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -47,9 +47,10 @@ namespace OddsData
                 {
                     using (SqlConnection objConn = new SqlConnection(OddsConnection.GetConnectionString()))
                     {
-                        SqlCommand cmd = new SqlCommand("insert into CrawledData(PageUrl,FullUrl,IsLinkCrawled,IsDataCrawled,IsInDomain,Header,Footer,HtmlContent) values(@PageUrl,@FullUrl,@IsLinkCrawled,@IsDataCrawled,@IsInDomain,@Header,@Footer,@HtmlContent)", objConn);
+                        SqlCommand cmd = new SqlCommand("insert into CrawledData(PageUrl,FullUrl,FullUrl2,IsLinkCrawled,IsDataCrawled,IsInDomain,Header,Footer,HtmlContent) values(@PageUrl,@FullUrl,@FullUrl2,@IsLinkCrawled,@IsDataCrawled,@IsInDomain,@Header,@Footer,@HtmlContent)", objConn);
                         cmd.Parameters.AddWithValue("@PageUrl", url.PageUrl);
                         cmd.Parameters.AddWithValue("@FullUrl", url.FullUrl);
+                        cmd.Parameters.AddWithValue("@FullUrl2", url.FullUrl2);
                         cmd.Parameters.AddWithValue("@IsLinkCrawled", false);
                         cmd.Parameters.AddWithValue("@IsDataCrawled", false);
                         cmd.Parameters.AddWithValue("@IsInDomain", url.IsInDomain);
@@ -80,7 +81,8 @@ namespace OddsData
                     data.HtmlContent = model.HtmlContent;
                     data.Header = model.Header;
                     data.Footer = model.Footer;
-
+                    data.IsHtmlPage = model.IsHtmlPage;
+                    data.IsHtmlPushed = false;
                     context.Entry(data).State = EntityState.Modified;
                     int status = context.SaveChanges();
                     return status;

@@ -52,11 +52,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CrawlAllMarketsData.cs" />
+    <Compile Include="CrawlDirectory.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="CrawlEachMarketData.cs" />
     <Compile Include="CrawledData.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="CrawlFirstPageData.cs" />
+    <Compile Include="CrawlTemplate.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="FDOTService.cs" />
     <Compile Include="GenerateCouponData.cs" />
     <Compile Include="Model1.Context.cs">

@@ -26,5 +26,7 @@ namespace OddsData
         }
     
         public DbSet<CrawledData> CrawledDatas { get; set; }
+        public DbSet<CrawlDirectory> CrawlDirectories { get; set; }
+        public DbSet<CrawlTemplate> CrawlTemplates { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace OddsBusiness
     public class Helper
     {
 
-        public static string GetWebSiteContent(string url)
+        public static string GetWebSiteContent(string url, int callback=0)
         {
             try
             {
@@ -39,7 +39,8 @@ namespace OddsBusiness
             }
             catch (WebException ex)
             {
-                string response = GetWebSiteContent(url);
+                if (callback >= 2) return "callback";
+                string response = GetWebSiteContent(url, callback + 1);
                 return response;
             }
         }

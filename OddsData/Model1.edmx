@@ -4,13 +4,25 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SFDefault_201712100926Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SFDefault_201712100926Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CrawlDirectory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="450" Nullable="false" />
+          <Property Name="AddedOn" Type="datetime" Nullable="false" />
+          <Property Name="IsPushed" Type="bit" Nullable="false" />
+          <Property Name="PushedOn" Type="datetime" />
+          <Property Name="TotalPages" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="CrawledData">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="PageUrl" Type="nvarchar" MaxLength="450" />
+          <Property Name="FullUrl2" Type="nvarchar(max)" />
           <Property Name="FullUrl" Type="nvarchar(max)" />
           <Property Name="CrawlDate" Type="datetime" />
           <Property Name="IsLinkCrawled" Type="bit" />
@@ -19,12 +31,33 @@
           <Property Name="Header" Type="text" />
           <Property Name="Footer" Type="text" />
           <Property Name="HtmlContent" Type="text" />
+          <Property Name="IsHtmlPage" Type="bit" />
+          <Property Name="IsHtmlPushed" Type="bit" />
+          <Property Name="PushDate" Type="datetime" />
+          <Property Name="SFPageId" Type="nvarchar" MaxLength="256" />
+          <Property Name="SFPageTitle" Type="nvarchar" MaxLength="256" />
+          <Property Name="ParentNodeId" Type="nvarchar" MaxLength="256" />
+          <Property Name="DirectoryName" Type="nvarchar" MaxLength="450" />
+          <Property Name="NewUrl" Type="nvarchar" MaxLength="450" />
+        </EntityType>
+        <EntityType Name="CrawlTemplates">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="256" />
+          <Property Name="LayoutControlId" Type="nvarchar" MaxLength="256" />
+          <Property Name="LayoutControlCaption" Type="nvarchar" MaxLength="256" />
+          <Property Name="PlaceholderId" Type="nvarchar" MaxLength="256" />
+          <Property Name="PlaceholderCaption" Type="nvarchar" MaxLength="256" />
+          <Property Name="IsActive" Type="bit" />
         </EntityType>
         <EntityContainer Name="SFDefault_201712100926ModelStoreContainer">
+          <EntitySet Name="CrawlDirectory" EntityType="Self.CrawlDirectory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CrawledData" EntityType="Self.CrawledData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CrawlTemplates" EntityType="Self.CrawlTemplates" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SFDefault_201712100926Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -42,10 +75,44 @@
           <Property Name="Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Footer" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="HtmlContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IsHtmlPage" Type="Boolean" />
+          <Property Name="IsHtmlPushed" Type="Boolean" />
+          <Property Name="PushDate" Type="DateTime" Precision="3" />
+          <Property Name="FullUrl2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SFPageId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="SFPageTitle" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="ParentNodeId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="DirectoryName" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Name="NewUrl" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="SFDefault_201712100926Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CrawledDatas" EntityType="Self.CrawledData" />
+          <EntitySet Name="CrawlDirectories" EntityType="SFDefault_201712100926Model.CrawlDirectory" />
+          <EntitySet Name="CrawlTemplates" EntityType="SFDefault_201712100926Model.CrawlTemplate" />
         </EntityContainer>
+        <EntityType Name="CrawlDirectory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Name="AddedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsPushed" Type="Boolean" Nullable="false" />
+          <Property Name="PushedOn" Type="DateTime" Precision="3" />
+          <Property Name="TotalPages" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CrawlTemplate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="LayoutControlId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="LayoutControlCaption" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="PlaceholderId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="PlaceholderCaption" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -55,6 +122,15 @@
           <EntitySetMapping Name="CrawledDatas">
             <EntityTypeMapping TypeName="SFDefault_201712100926Model.CrawledData">
               <MappingFragment StoreEntitySet="CrawledData">
+                <ScalarProperty Name="NewUrl" ColumnName="NewUrl" />
+                <ScalarProperty Name="DirectoryName" ColumnName="DirectoryName" />
+                <ScalarProperty Name="ParentNodeId" ColumnName="ParentNodeId" />
+                <ScalarProperty Name="SFPageTitle" ColumnName="SFPageTitle" />
+                <ScalarProperty Name="SFPageId" ColumnName="SFPageId" />
+                <ScalarProperty Name="FullUrl2" ColumnName="FullUrl2" />
+                <ScalarProperty Name="PushDate" ColumnName="PushDate" />
+                <ScalarProperty Name="IsHtmlPushed" ColumnName="IsHtmlPushed" />
+                <ScalarProperty Name="IsHtmlPage" ColumnName="IsHtmlPage" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
                 <ScalarProperty Name="FullUrl" ColumnName="FullUrl" />
@@ -65,6 +141,31 @@
                 <ScalarProperty Name="Header" ColumnName="Header" />
                 <ScalarProperty Name="Footer" ColumnName="Footer" />
                 <ScalarProperty Name="HtmlContent" ColumnName="HtmlContent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CrawlDirectories">
+            <EntityTypeMapping TypeName="SFDefault_201712100926Model.CrawlDirectory">
+              <MappingFragment StoreEntitySet="CrawlDirectory">
+                <ScalarProperty Name="TotalPages" ColumnName="TotalPages" />
+                <ScalarProperty Name="PushedOn" ColumnName="PushedOn" />
+                <ScalarProperty Name="IsPushed" ColumnName="IsPushed" />
+                <ScalarProperty Name="AddedOn" ColumnName="AddedOn" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CrawlTemplates">
+            <EntityTypeMapping TypeName="SFDefault_201712100926Model.CrawlTemplate">
+              <MappingFragment StoreEntitySet="CrawlTemplates">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="PlaceholderCaption" ColumnName="PlaceholderCaption" />
+                <ScalarProperty Name="PlaceholderId" ColumnName="PlaceholderId" />
+                <ScalarProperty Name="LayoutControlCaption" ColumnName="LayoutControlCaption" />
+                <ScalarProperty Name="LayoutControlId" ColumnName="LayoutControlId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

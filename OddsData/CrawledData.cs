@@ -24,5 +24,14 @@ namespace OddsData
         public string Header { get; set; }
         public string Footer { get; set; }
         public string HtmlContent { get; set; }
+        public Nullable<bool> IsHtmlPage { get; set; }
+        public Nullable<bool> IsHtmlPushed { get; set; }
+        public Nullable<System.DateTime> PushDate { get; set; }
+        public string FullUrl2 { get; set; }
+        public string SFPageId { get; set; }
+        public string SFPageTitle { get; set; }
+        public string ParentNodeId { get; set; }
+        public string DirectoryName { get; set; }
+        public string NewUrl { get; set; }
     }
 }

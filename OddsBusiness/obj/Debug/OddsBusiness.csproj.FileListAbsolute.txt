@@ -70,3 +70,19 @@ D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsBusin
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsBusiness\obj\Debug\OddsBusiness.csprojResolveAssemblyReference.cache
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsBusiness\obj\Debug\OddsBusiness.dll
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsBusiness\obj\Debug\OddsBusiness.pdb
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\OddsBusiness.dll
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\OddsBusiness.pdb
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\HtmlAgilityPack.dll
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\OddsData.dll
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\OddsProperties.dll
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\EntityFramework.dll
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\AutoMapper.dll
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\OddsData.pdb
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\OddsProperties.pdb
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\HtmlAgilityPack.xml
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\EntityFramework.xml
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\bin\Debug\AutoMapper.xml
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\obj\Debug\OddsBusiness.csprojResolveAssemblyReference.cache
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\obj\Debug\OddsBusiness.dll
+C:\Users\vikky\Source\Repos\OddsCompiler\OddsBusiness\obj\Debug\OddsBusiness.pdb

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SFDefault_201712100926ModelStoreContainer" CdmEntityContainer="SFDefault_201712100926Entities">
+    <EntitySetMapping Name="CrawledDatas">
+      <EntityTypeMapping TypeName="SFDefault_201712100926Model.CrawledData">
+        <MappingFragment StoreEntitySet="CrawledData">
+          <ScalarProperty Name="NewUrl" ColumnName="NewUrl" />
+          <ScalarProperty Name="DirectoryName" ColumnName="DirectoryName" />
+          <ScalarProperty Name="ParentNodeId" ColumnName="ParentNodeId" />
+          <ScalarProperty Name="SFPageTitle" ColumnName="SFPageTitle" />
+          <ScalarProperty Name="SFPageId" ColumnName="SFPageId" />
+          <ScalarProperty Name="FullUrl2" ColumnName="FullUrl2" />
+          <ScalarProperty Name="PushDate" ColumnName="PushDate" />
+          <ScalarProperty Name="IsHtmlPushed" ColumnName="IsHtmlPushed" />
+          <ScalarProperty Name="IsHtmlPage" ColumnName="IsHtmlPage" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
+          <ScalarProperty Name="FullUrl" ColumnName="FullUrl" />
+          <ScalarProperty Name="CrawlDate" ColumnName="CrawlDate" />
+          <ScalarProperty Name="IsLinkCrawled" ColumnName="IsLinkCrawled" />
+          <ScalarProperty Name="IsDataCrawled" ColumnName="IsDataCrawled" />
+          <ScalarProperty Name="IsInDomain" ColumnName="IsInDomain" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="HtmlContent" ColumnName="HtmlContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CrawlDirectories">
+      <EntityTypeMapping TypeName="SFDefault_201712100926Model.CrawlDirectory">
+        <MappingFragment StoreEntitySet="CrawlDirectory">
+          <ScalarProperty Name="TotalPages" ColumnName="TotalPages" />
+          <ScalarProperty Name="PushedOn" ColumnName="PushedOn" />
+          <ScalarProperty Name="IsPushed" ColumnName="IsPushed" />
+          <ScalarProperty Name="AddedOn" ColumnName="AddedOn" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CrawlTemplates">
+      <EntityTypeMapping TypeName="SFDefault_201712100926Model.CrawlTemplate">
+        <MappingFragment StoreEntitySet="CrawlTemplates">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PlaceholderCaption" ColumnName="PlaceholderCaption" />
+          <ScalarProperty Name="PlaceholderId" ColumnName="PlaceholderId" />
+          <ScalarProperty Name="LayoutControlCaption" ColumnName="LayoutControlCaption" />
+          <ScalarProperty Name="LayoutControlId" ColumnName="LayoutControlId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

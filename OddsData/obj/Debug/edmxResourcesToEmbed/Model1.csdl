@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SFDefault_201712100926Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CrawledData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PageUrl" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="FullUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CrawlDate" Type="DateTime" Precision="3" />
+    <Property Name="IsLinkCrawled" Type="Boolean" />
+    <Property Name="IsDataCrawled" Type="Boolean" />
+    <Property Name="IsInDomain" Type="Boolean" />
+    <Property Name="Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Footer" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="HtmlContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsHtmlPage" Type="Boolean" />
+    <Property Name="IsHtmlPushed" Type="Boolean" />
+    <Property Name="PushDate" Type="DateTime" Precision="3" />
+    <Property Name="FullUrl2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SFPageId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SFPageTitle" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ParentNodeId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DirectoryName" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="NewUrl" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="SFDefault_201712100926Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CrawledDatas" EntityType="Self.CrawledData" />
+    <EntitySet Name="CrawlDirectories" EntityType="SFDefault_201712100926Model.CrawlDirectory" />
+    <EntitySet Name="CrawlTemplates" EntityType="SFDefault_201712100926Model.CrawlTemplate" />
+  </EntityContainer>
+  <EntityType Name="CrawlDirectory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="AddedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsPushed" Type="Boolean" Nullable="false" />
+    <Property Name="PushedOn" Type="DateTime" Precision="3" />
+    <Property Name="TotalPages" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CrawlTemplate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LayoutControlId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LayoutControlCaption" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PlaceholderId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PlaceholderCaption" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+</Schema>

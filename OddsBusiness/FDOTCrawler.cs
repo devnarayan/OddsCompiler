@@ -17,14 +17,17 @@ namespace OddsBusiness
 {
     public class FDOTCrawler
     {
+        const string skipExtension = ".pdf,.doc,.exe,.dotx,.xlsx,.xml,.docx,.xls";
+
         public string CrawlUrls(string link)
         {
             try
             {
                 CrawlFirstPageData crawldata = new CrawlFirstPageData();
-                ThreadParameters tp = new ThreadParameters
+                UrlModel tp = new UrlModel
                 {
-                    URL = link
+                    FullUrl = link,
+                    FullUrl2 = link
                 };
                 CrawlAllLinks(tp);
                 //ThreadPool.QueueUserWorkItem(new WaitCallback(CrawlAllLinks), tp);
@@ -38,11 +41,9 @@ namespace OddsBusiness
 
         public void CrawlData()
         {
-
             FDOTService _service = new FDOTService();
             while (_service.IsLinkCrawlRemain() > 0)
             {
-
                 var linkList = _service.GetUrlForLinkCrawl();
                 if (linkList != null)
                 {
@@ -54,7 +55,6 @@ namespace OddsBusiness
                         };
                         string ext = Path.GetExtension(link.FullUrl);
                         if (ext == null) ext = "";
-                        string skipExtension = ".pdf,.doc,.exe,.dotx,.xlsx,.xml,.docx,.xls";
                         if (skipExtension.Contains(ext) && ext != "")
                         {
                             // Skip this file format.
@@ -62,13 +62,13 @@ namespace OddsBusiness
                         }
                         else
                         {
-                            CrawlAllLinks(tp);
+                            CrawlAllLinks(link);
                         }
 
                         // Update ulr status as IsLinkCrawled=True;
                         _service.UpdateLinkCrawled(link);
 
-                        if (skipExtension.Contains(ext) && ext!="")
+                        if (skipExtension.Contains(ext) && ext != "")
                         {
                             // Skip this file format.
                             Console.WriteLine("--------Skipped Extension " + ext);
@@ -85,20 +85,27 @@ namespace OddsBusiness
             }
         }
 
-        private void CrawlAllLinks(object threadparam)
+        private void CrawlAllLinks(UrlModel model)
         {
-            ThreadParameters p = threadparam as ThreadParameters;
-            string url = p.URL;
+            string url = model.FullUrl;
             try
             {
-                Console.WriteLine("Link Crawling " + p.URL);
+                Console.WriteLine("Link Crawling " + model.FullUrl);
                 TraceService("Crawling Started: --------Links--------, URL:" + url + "\n");
 
-                string html = Helper.GetWebSiteContent(url);
+                string html = Helper.GetWebSiteContent(model.FullUrl);
+                if (html == "callback")
+                {
+                    Console.WriteLine("Link Crawling " + model.FullUrl2);
+                    TraceService("Crawling Started: --------Links--------, URL:" + model.FullUrl2 + "\n");
+                    url = model.FullUrl2;
+                    html = Helper.GetWebSiteContent(model.FullUrl2);
+                }
                 HtmlAgilityPack.HtmlDocument doc = Helper.LoadHtml(html);
                 FDOTService crawldata = new FDOTService();
                 XmlDocument xmldoc = new XmlDocument();
                 List<UrlModel> linkList = new List<UrlModel>();
+                List<CrawlDirectoryModel> directoryList = new List<CrawlDirectoryModel>();
                 var list = doc.DocumentNode.SelectSingleNode("//body");
 
                 Uri myUri = new Uri(url);
@@ -112,19 +119,42 @@ namespace OddsBusiness
                     {
                         string link = nodes[i].Attributes["href"].Value;
                         string fullLink = "";
+                        string fullLink2 = "";
+                        //string ext = Path.GetExtension(link);
+                        //if (ext == null) ext = "";
+                        //if (skipExtension.Contains(ext) && ext != "")
+                        //{
+                        //    string pageName = Path.GetFileName(url);
+                        //}
+
                         if (link.Contains("http://") || link.Contains("https://"))
                         {
                             fullLink = link;
                         }
                         else
                         {
-                            fullLink = url + "/" + link;
+                            fullLink = (url.Replace(Path.GetFileName(url), "") + "/" + link).Replace("///","/../");
+                            fullLink2 = url + "/" + link;
+                        }
+                        bool isInDomain = fullLink.Contains(host) && !link.Contains("mailto:");
+                        if (isInDomain)
+                        {
+                            // Only in domain directory added.
+                            if (directoryList.Where(st => st.Name == "").Count() == 0)
+                            {
+                                directoryList.Add(new CrawlDirectoryModel()
+                                {
+                                    Name = ""
+
+                                });
+                            }
                         }
                         linkList.Add(new UrlModel()
                         {
                             PageUrl = link,
                             FullUrl = fullLink,
-                            IsInDomain = fullLink.Contains(host)
+                            FullUrl2 = fullLink2,
+                            IsInDomain =isInDomain
                         });
                     }
                     xmldoc = GenerateXmlForPageUrls(linkList);
@@ -150,11 +180,17 @@ namespace OddsBusiness
                     Console.WriteLine("----Removed file name " + file2);
                 }
 
-
-                Console.WriteLine("Content Crawling " + model.PageUrl);
+                Console.WriteLine("Content Crawling " + model.FullUrl);
                 TraceService("Crawling Started: --------Links--------, URL:" + model.FullUrl + "\n");
 
                 string html = Helper.GetWebSiteContent(model.FullUrl);
+                if(html=="callback")
+                {
+                    Console.WriteLine("Content Crawling " + model.FullUrl2);
+                    TraceService("Crawling Started: --------Links--------, URL:" + model.FullUrl2 + "\n");
+                    html = Helper.GetWebSiteContent(model.FullUrl2);
+                }
+
                 HtmlAgilityPack.HtmlDocument doc = Helper.LoadHtml(html);
                 FDOTService crawldata = new FDOTService();
                 var content = doc.DocumentNode.SelectSingleNode("//div[@id='content']");
@@ -165,10 +201,11 @@ namespace OddsBusiness
                 {
                     var data = new UrlModel()
                     {
-                        Id=model.Id,
+                        Id = model.Id,
                         HtmlContent = content.OuterHtml,
                         Header = header.OuterHtml,
-                        Footer = footer.OuterHtml
+                        Footer = footer.OuterHtml,
+                        IsHtmlPage = true
                     };
 
                     crawldata.UpdateHtmlData(data);
