@@ -35,3 +35,9 @@ C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\bin\Debug\OddsProperties
 C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\obj\Debug\OddsProperties.csprojResolveAssemblyReference.cache
 C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\obj\Debug\OddsProperties.dll
 C:\Users\vikky\Source\Repos\OddsCompiler\OddsProperties\obj\Debug\OddsProperties.pdb
+D:\Projects\Crawler\OddsProperties\bin\Debug\OddsProperties.dll
+D:\Projects\Crawler\OddsProperties\bin\Debug\OddsProperties.pdb
+D:\Projects\Crawler\OddsProperties\obj\Debug\OddsProperties.csproj.AssemblyReference.cache
+D:\Projects\Crawler\OddsProperties\obj\Debug\OddsProperties.csproj.CoreCompileInputs.cache
+D:\Projects\Crawler\OddsProperties\obj\Debug\OddsProperties.dll
+D:\Projects\Crawler\OddsProperties\obj\Debug\OddsProperties.pdb

@@ -29,6 +29,7 @@ namespace OddsBusiness
                     FullUrl = link,
                     FullUrl2 = link
                 };
+                CrawlContents(tp);
                 CrawlAllLinks(tp);
                 //ThreadPool.QueueUserWorkItem(new WaitCallback(CrawlAllLinks), tp);
                 return "Command completed successfully";
@@ -193,10 +194,33 @@ namespace OddsBusiness
 
                 HtmlAgilityPack.HtmlDocument doc = Helper.LoadHtml(html);
                 FDOTService crawldata = new FDOTService();
-                var content = doc.DocumentNode.SelectSingleNode("//div[@id='content']");
+                var content = doc.DocumentNode.SelectSingleNode("//div[@id='reviews']");
                 var header = doc.DocumentNode.SelectSingleNode("//div[@id='header']");
-                var footer = doc.DocumentNode.SelectSingleNode("//div[@id='footer']");
-
+                var footer = doc.DocumentNode.SelectSingleNode("//*[@id=\"reviews\"]/section/div[2]/div[3]/div/div[1]/div/span/div[2]");
+                doc = Helper.LoadHtml(content.OuterHtml);
+                var urls = doc.DocumentNode.SelectNodes("//ul");
+                foreach(var ul in urls)
+                {
+                    var attr = ul.Attributes;
+                    var className = ul.Attributes["class"];
+                    var rating = ul.Attributes["aria-label"];
+                    if(rating == null && className != null && className.Value != null && className.Value.Contains("list"))
+                    {
+                        var list = ul.ChildNodes;
+                        int i = 0;
+                        foreach (var node in list)
+                        {
+                            i++;
+                            var name = node.SelectSingleNode("//ul/li["+i+"]/div/div[1]/div/div[1]/div/div/div[2]/div[1]/span/a");
+                            var address = node.SelectSingleNode("//ul/li[" + i + "]/div/div[1]/div/div[1]/div/div/div[2]/div[1]/div");
+                            var star = node.SelectSingleNode("//ul/li[" + i + "]/div/div[2]/div/div[1]/span/div");
+                            var startRating = star.Attributes["aria-label"];
+                            var date = node.SelectSingleNode("//ul/li[" + i + "]/div/div[2]/div/div[2]/span");
+                            var comment = node.SelectSingleNode("//ul/li[" + i + "]/div/div[3]/p");
+                            var comment2 = node.SelectSingleNode("//ul/li[" + i + "]/div/div[4]/p");
+                        }
+                    }
+                }
                 if (content != null)
                 {
                     var data = new UrlModel()

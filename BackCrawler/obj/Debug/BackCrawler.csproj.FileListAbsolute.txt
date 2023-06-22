@@ -66,3 +66,23 @@ D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\BackCrawl
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\BackCrawler\obj\Debug\BackCrawler.csprojResolveAssemblyReference.cache
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\BackCrawler\obj\Debug\BackCrawler.exe
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\BackCrawler\obj\Debug\BackCrawler.pdb
+D:\Projects\Crawler\BackCrawler\bin\Debug\BackCrawler.exe.config
+D:\Projects\Crawler\BackCrawler\bin\Debug\BackCrawler.exe
+D:\Projects\Crawler\BackCrawler\bin\Debug\BackCrawler.pdb
+D:\Projects\Crawler\BackCrawler\bin\Debug\OddsBusiness.dll
+D:\Projects\Crawler\BackCrawler\bin\Debug\OddsData.dll
+D:\Projects\Crawler\BackCrawler\bin\Debug\OddsProperties.dll
+D:\Projects\Crawler\BackCrawler\bin\Debug\EntityFramework.dll
+D:\Projects\Crawler\BackCrawler\bin\Debug\AutoMapper.dll
+D:\Projects\Crawler\BackCrawler\bin\Debug\OddsBusiness.pdb
+D:\Projects\Crawler\BackCrawler\bin\Debug\OddsData.pdb
+D:\Projects\Crawler\BackCrawler\bin\Debug\OddsData.dll.config
+D:\Projects\Crawler\BackCrawler\bin\Debug\OddsProperties.pdb
+D:\Projects\Crawler\BackCrawler\bin\Debug\EntityFramework.xml
+D:\Projects\Crawler\BackCrawler\bin\Debug\AutoMapper.xml
+D:\Projects\Crawler\BackCrawler\obj\Debug\BackCrawler.csproj.AssemblyReference.cache
+D:\Projects\Crawler\BackCrawler\obj\Debug\BackCrawler.csproj.SuggestedBindingRedirects.cache
+D:\Projects\Crawler\BackCrawler\obj\Debug\BackCrawler.csproj.CoreCompileInputs.cache
+D:\Projects\Crawler\BackCrawler\obj\Debug\BackCrawler.csproj.CopyComplete
+D:\Projects\Crawler\BackCrawler\obj\Debug\BackCrawler.exe
+D:\Projects\Crawler\BackCrawler\obj\Debug\BackCrawler.pdb

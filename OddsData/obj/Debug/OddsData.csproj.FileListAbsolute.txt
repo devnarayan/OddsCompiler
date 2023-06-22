@@ -55,3 +55,17 @@ C:\Users\vikky\Source\Repos\OddsCompiler\OddsData\bin\Debug\EntityFramework.xml
 C:\Users\vikky\Source\Repos\OddsCompiler\OddsData\obj\Debug\OddsData.csprojResolveAssemblyReference.cache
 C:\Users\vikky\Source\Repos\OddsCompiler\OddsData\obj\Debug\OddsData.dll
 C:\Users\vikky\Source\Repos\OddsCompiler\OddsData\obj\Debug\OddsData.pdb
+D:\Projects\Crawler\OddsData\bin\Debug\OddsData.dll.config
+D:\Projects\Crawler\OddsData\bin\Debug\OddsData.dll
+D:\Projects\Crawler\OddsData\bin\Debug\OddsData.pdb
+D:\Projects\Crawler\OddsData\bin\Debug\AutoMapper.dll
+D:\Projects\Crawler\OddsData\bin\Debug\EntityFramework.dll
+D:\Projects\Crawler\OddsData\bin\Debug\OddsProperties.dll
+D:\Projects\Crawler\OddsData\bin\Debug\OddsProperties.pdb
+D:\Projects\Crawler\OddsData\bin\Debug\AutoMapper.xml
+D:\Projects\Crawler\OddsData\bin\Debug\EntityFramework.xml
+D:\Projects\Crawler\OddsData\obj\Debug\OddsData.csproj.AssemblyReference.cache
+D:\Projects\Crawler\OddsData\obj\Debug\OddsData.csproj.CoreCompileInputs.cache
+D:\Projects\Crawler\OddsData\obj\Debug\OddsData.csproj.CopyComplete
+D:\Projects\Crawler\OddsData\obj\Debug\OddsData.dll
+D:\Projects\Crawler\OddsData\obj\Debug\OddsData.pdb

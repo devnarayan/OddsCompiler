@@ -98,3 +98,29 @@ D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsCheck
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsCheckerService\obj\Debug\OddsCheckerService.csproj.GenerateResource.Cache
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsCheckerService\obj\Debug\OddsCheckerService.exe
 D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsCheckerService\obj\Debug\OddsCheckerService.pdb
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsCheckerService.exe.config
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsCheckerService.exe
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsCheckerService.pdb
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsBusiness.dll
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsData.dll
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsProperties.dll
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\HtmlAgilityPack.dll
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\EntityFramework.dll
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\AutoMapper.dll
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsBusiness.pdb
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsData.pdb
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsData.dll.config
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\OddsProperties.pdb
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\HtmlAgilityPack.pdb
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\HtmlAgilityPack.xml
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\EntityFramework.xml
+D:\Projects\Crawler\OddsCheckerService\bin\Debug\AutoMapper.xml
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.csproj.AssemblyReference.cache
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.csproj.SuggestedBindingRedirects.cache
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.OddsCheckerService.resources
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.ProjectInstaller.resources
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.csproj.GenerateResource.cache
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.csproj.CoreCompileInputs.cache
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.csproj.CopyComplete
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.exe
+D:\Projects\Crawler\OddsCheckerService\obj\Debug\OddsCheckerService.pdb

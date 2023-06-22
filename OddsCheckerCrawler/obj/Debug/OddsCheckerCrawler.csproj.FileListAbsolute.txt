@@ -202,3 +202,46 @@ D:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsCheck
 F:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsCheckerCrawler\bin\Debug\OddsCheckerCrawler.exe.config
 F:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.exe
 F:\Project Data\OddsCompiler\a-SourceCode\OddsCompiler\WindowsService1\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.pdb
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsCheckerCrawler.exe.config
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsCheckerCrawler.exe
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsCheckerCrawler.pdb
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\BackCrawler.exe
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\CodersLab.Windows.Controls.TreeView.dll
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\HtmlAgilityPack.dll
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsBusiness.dll
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsProperties.dll
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsData.dll
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\EntityFramework.dll
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\AutoMapper.dll
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\BackCrawler.pdb
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\BackCrawler.exe.config
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsBusiness.pdb
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsProperties.pdb
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\CodersLab.Windows.Controls.TreeView.pdb
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\HtmlAgilityPack.pdb
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\HtmlAgilityPack.xml
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsData.pdb
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\OddsData.dll.config
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\EntityFramework.xml
+D:\Projects\Crawler\OddsCheckerCrawler\bin\Debug\AutoMapper.xml
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.csproj.AssemblyReference.cache
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.csproj.SuggestedBindingRedirects.cache
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.AddMarket.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.BettingMarkets.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.ChampLeagueResult.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.CouponManage.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.Coupons.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.GolfCrawler.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.MarketOdds.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.MatchesSchedule.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.OddsCheckerCrawler.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.OddsCrawler.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.Properties.Resources.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.frmResultView.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.SaveCoupon.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.UpdatePrice.resources
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.csproj.GenerateResource.cache
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.csproj.CoreCompileInputs.cache
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.csproj.CopyComplete
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.exe
+D:\Projects\Crawler\OddsCheckerCrawler\obj\Debug\OddsCheckerCrawler.pdb
